@@ -102,3 +102,12 @@ $(function () {
     });
   });
 });
+
+const sendMessage = async (data) => {
+  try {
+    await firebase.firestore().collection('messages').add(data);
+    console.log('Pesan berhasil dikirim');
+  } catch (error) {
+    console.error('Error mengirim pesan:', error);
+  }
+};
