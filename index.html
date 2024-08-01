@@ -368,6 +368,32 @@
     <script src="js/script.js"></script>
     <!-- Lihgtbox js -->
     <script src="js/lightbox-plus-jquery.js"></script>
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+
+    <!-- Firebase Database SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+
+    <!-- Add your Firebase project configuration -->
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyADEQhtt5SVU4BbSHvBCjsqIfpWtF7U2L8",
+        authDomain: "wedding-tuta.firebaseapp.com",
+        projectId: "wedding-tuta",
+        storageBucket: "wedding-tuta.appspot.com",
+        messagingSenderId: "1014946306724",
+        appId: "1:1014946306724:web:f630d023ff2816dfd5a431",
+        measurementId: "G-LS6RBKB8T5"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Get a reference to the database
+      const database = firebase.database();
+    </script>
+
     <!-- Message Strorage -->
     <script src="js/strorage.js"></script>
     <!-- toastr -->
