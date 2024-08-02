@@ -29,7 +29,15 @@
     <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css">
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
+
+    <!-- Add other Firebase SDKs that you need -->
+
   </head>
+
   <body>
     
     <!-- popup start -->
@@ -368,33 +376,10 @@
     <script src="js/script.js"></script>
     <!-- Lihgtbox js -->
     <script src="js/lightbox-plus-jquery.js"></script>
-    <!-- Firebase App (the core Firebase SDK) -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script>
-    <!-- Firebase Database SDK -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"></script>
-
-    <!-- Add your Firebase project configuration -->
-    <script>
-      // TODO: Replace the following with your app's Firebase project configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyADEQhtt5SVU4BbSHvBCjsqIfpWtF7U2L8",
-        authDomain: "wedding-tuta.firebaseapp.com",
-        projectId: "wedding-tuta",
-        storageBucket: "wedding-tuta.appspot.com",
-        messagingSenderId: "1014946306724",
-        appId: "1:1014946306724:web:f630d023ff2816dfd5a431",
-        measurementId: "G-LS6RBKB8T5"
-      };
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-
-      // Get a reference to the database
-      const database = firebase.database();
-    </script>
-
     <!-- Message Strorage -->
-    <script src="js/strorage.js"></script>
+    <!-- <script src="js/strorage.js"></script> -->
+    <script type="module" src="js/strorage.js" defer></script>
+
     <!-- toastr -->
     <script src="assets/toastr/toastr.min.js"></script>
     <!-- Aos -->
