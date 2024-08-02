@@ -95,3 +95,37 @@ document.getElementById("formMessage").addEventListener("submit", (event) => {
   event.preventDefault();
   insert();
 });
+
+
+const db = getDatabase();
+const messagesRef = ref(db, 'messages/');
+
+onValue(messagesRef, (snapshot) => {
+  const data = snapshot.val();
+  console.log(data); // Log data to console
+  // Call a function to display data
+  displayData(data);
+});
+
+function displayData(data) {
+  const container = document.getElementById('messages-container');
+  container.innerHTML = ''; // Clear existing content
+
+  // Assuming data is an object with keys being IDs and values being message objects
+  for (const key in data) {
+    if (data.hasOwnProperty(key)) {
+      const message = data[key];
+      const messageElement = document.createElement('div');
+
+      // Extract and format properties from each message object
+      messageElement.innerHTML = `
+        <p><strong>Hubungan:</strong> ${message.hubungan}</p>
+        <p><strong>Nama:</strong> ${message.nama}</p>
+        <p><strong>Pesan:</strong> ${message.pesan}</p>
+      `;
+
+      container.appendChild(messageElement);
+    }
+  }
+}
+
