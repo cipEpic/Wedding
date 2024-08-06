@@ -415,8 +415,8 @@ body {
 }
 
 .about .row .about-img img {
-  width: 40%;
-  height: 75%;
+  width: 80%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2/3;
@@ -426,16 +426,16 @@ body {
 
 .about .row .about-img .overlay-img {
   position: absolute;
-  top: -2rem;
-  left: 2rem;
-  width: 30%;
+  top: 20rem;
+  right: 20rem;
+  width: 60%;
   box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
   
 }
 
 .about .row .content {
   flex: 1 1 35rem;
-  padding: 10rem 2rem;
+  padding: 20rem 2rem 0rem;
   color: var(--dark-75);
   text-align: center;
 }
@@ -479,7 +479,7 @@ body {
 
 /* about2 */
 .about2 {
-  padding: 7rem 7% 1.4rem;
+  padding: 7rem 7% 20.4rem;
   background-image: linear-gradient(to top, rgba(93, 100, 111, 0.3), rgba(255, 255, 255, 0.5));
 }
 
@@ -499,8 +499,8 @@ body {
 }
 
 .about2 .row .about2-img img {
-  width: 40%;
-  height: 75%;
+  width: 80%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2/3;
@@ -510,15 +510,15 @@ body {
 
 .about2 .row .about2-img .overlay-img {
   position: absolute;
-  top: -2rem;
-  right: 2rem;
-  width: 30%;
+  top: 20rem;
+  left: 20rem;
+  width: 60%;
   box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
 }
 
 .about2 .row .content {
   flex: 1 1 35rem;
-  padding: 10rem 2rem;
+  padding: 20rem 2rem 0rem;
   color: var(--dark-75);
   text-align: center;
 }
@@ -1300,6 +1300,7 @@ footer .credit h5 {
   html {
     font-size: 65%;
   }
+  
 
   .popup-container {
     min-height: 100vh;
@@ -1510,14 +1511,14 @@ footer .credit h5 {
   .about2 .row .about2-img .overlay-img {
     position: absolute;
     top: 20rem;
-    left: 5rem;
+    right: 5rem;
     width: 50%;
     box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
   }
 
   .about2 .row .content {
     flex: 0 0 100%;
-    padding: 1.5rem 7%;
+    padding: 1.5rem 7% 5rem;
     text-align: center;
   }
 
