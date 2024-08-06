@@ -22,6 +22,7 @@
 :root {
   --explora: "Explora", cursive;
   --poppins: "Poppins", sans-serif;
+  --prata: "Prata", sans-serif;
 
   /* COLORS */
   --dark-100: #3a4f47;
@@ -58,7 +59,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../images/popup.JPG);
   background-size: cover;
@@ -112,6 +113,35 @@ body {
   font-weight: normal;
   margin-bottom: 2rem;
   font-style: italic; /* Menambahkan properti untuk teks miring */
+  
+}
+
+.popup-content .example3 {
+  font-size: 3rem;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  font-weight: normal;
+  margin-bottom: 2rem;
+  font-style: italic; /* Menambahkan properti untuk teks miring */
+  font-family: analogue, Sans-Serif;
+}
+
+.popup-content .example4 {
+  font-size: 1rem;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  font-weight: normal;
+  margin-bottom: 1rem;
+  letter-spacing: 0.6em; /* Sesuaikan nilai ini sesuai keinginan Anda */
+}
+
+.popup-content .example5 {
+  font-size: 1.5rem;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  font-weight: normal;
+  margin-bottom: 2rem;
+
 }
 
 .popup-content h1 {
@@ -177,11 +207,10 @@ body {
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: flex-end;
-  align-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   overflow: hidden;
-  
 }
 
 .slider {
@@ -322,8 +351,10 @@ body {
 
 /* quran */
 .quran {
-  padding: 7rem 7% 1.4rem;
-  background: linear-gradient(to bottom, #f0f0f0, #fff); /* Gradien dari warna terang ke putih */
+  position: relative;
+  background: #ffffff; /* Atur warna latar belakang jika diperlukan */
+  padding: 2rem 7% 1.4rem;
+  /* background: linear-gradient(to bottom, #f0f0f0, #fff); Gradien dari warna terang ke putih */
 }
 
 .quran .row {
@@ -331,6 +362,8 @@ body {
 }
 .quran .row .quran-img {
   flex: 1 1 45rem;
+  width:5%;
+  padding: 0 0 5rem;
 }
 
 .quran .row .quran-img img {
@@ -342,20 +375,24 @@ body {
   padding: 5rem 2rem;
 }
 .quran .row .content h3 {
-  font-size: 3rem;
+  font-family: "Crete Round", Sans-serif;
+  font-size: 1rem;
   margin-bottom: 1rem;
-  color: var(--gray-100);
+  color: #000000;
   font-weight: 700;
-  font-style: italic;
-  font-family: power, sans-serif;
+  text-transform: uppercase;
+  line-height: 1em;
+  /* font-style: italic; */
 }
+
 .quran .row .content p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   margin-bottom: 0.8rem;
-  color: var(--gray-50);
-  font-family: "Poppins", Sans-serif;
   font-weight: normal;
   font-style: italic;
+  color: #AE9250;
+  font-family: "Dosis", Sans-serif;
+  line-height: 1.7em;
 }
 /* about */
 .about {
@@ -364,56 +401,80 @@ body {
 
 .about .row {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack content on top of image */
 }
+
 .about .row .about-img {
+  position: relative;
   flex: 1 1 45rem;
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
 }
 
 .about .row .about-img img {
-  width: 90%;
+  width: 40%;
   height: 75%;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2/3;
   box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8);
+  border-radius: 5%; /* Membuat gambar bundar */
+}
+
+.about .row .about-img .overlay-img {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  width: 30%;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
+  
 }
 
 .about .row .content {
   flex: 1 1 35rem;
   padding: 10rem 2rem;
   color: var(--dark-75);
+  text-align: center;
 }
-.about .row .content h3 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  font-family: analogue, sans-serif;
+
+.about .row .content h4 {
+  color: #9b9b9b;
+  font-family: "Karla", Sans-serif;
+  font-size: 1rem;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2.8px;
+  line-height: 1.2em;
 }
+
+.about .row .content h3 {
+  color: #121212;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-family: "Prata", Sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+}
+
+
 .about .row .content p {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   font-family: var(--poppins);
-  font-weight: 600;
+  font-weight: normal;
+  color: #9b9b9b;
 }
+
 .about .row .content span {
   font-size: 1.5rem;
   display: block;
   margin-bottom: 1.5rem;
   font-family: var(--poppins);
   font-weight: normal;
-}
-.cba {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  color: #fff;
-  font-size: 1.4rem;
-  background-color: var(--warning);
-  text-transform: uppercase;
-}
-.cba i {
-  margin-right: 0.5rem;
 }
 
 /* about2 */
@@ -424,40 +485,72 @@ body {
 
 .about2 .row {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack content on top of image */
 }
+
 .about2 .row .about2-img {
+  position: relative;
   flex: 1 1 45rem;
-  order: 2;
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
 }
 
 .about2 .row .about2-img img {
-  width: 90%;
+  width: 40%;
   height: 75%;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 2/3;
   box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8);
+  border-radius: 5%; /* Membuat gambar bundar */
+}
+
+.about2 .row .about2-img .overlay-img {
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  width: 30%;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
 }
 
 .about2 .row .content {
   flex: 1 1 35rem;
   padding: 10rem 2rem;
   color: var(--dark-75);
+  text-align: center;
 }
+
+.about2 .row .content h4 {
+  color: #9b9b9b;
+  font-family: "Karla", Sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  line-height: 1.2em;
+}
+
 .about2 .row .content h3 {
+  color: #121212;
   font-size: 4rem;
   margin-bottom: 1rem;
-  font-family: analogue, sans-serif;
-  font-weight: normal;
+  font-family: "Prata", Sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  line-height: 1.2em;
 }
+
 .about2 .row .content p {
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0;
   font-family: var(--poppins);
-  font-weight: 600;
+  font-weight: normal;
+  color: #9b9b9b;
 }
+
 .about2 .row .content span {
   font-size: 1.5rem;
   display: block;
@@ -466,6 +559,10 @@ body {
   font-weight: normal;
 }
 
+.cba {
+  padding: 0.5rem 1.8rem;
+  margin-top: 1rem;
+}
 /* story */
 
 .story {
@@ -1207,9 +1304,9 @@ footer .credit h5 {
   .popup-container {
     min-height: 100vh;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     align-content: flex-end;
-    padding: 25rem 3rem;
+    padding: 10rem 3rem;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -1220,10 +1317,72 @@ footer .credit h5 {
     align-items: center;
   }
 
-  /* .hero .content {
-    padding-top: 22rem;
-  } */
+.popup-content-sub {
+  display: flex;
+  flex-direction: column; /* Atur elemen secara vertikal */
+  align-items: center; /* Pusatkan elemen secara horizontal */
+  margin-top: auto; /* Biarkan konten di atas mengisi ruang */
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  padding-top: 30rem;
+}
 
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  
+}
+.hero .content {
+  padding-top: 5rem;
+  margin: 2rem auto;
+}
+
+.hero-waves {
+  height: 20px;
+}
+
+.wave1 use {
+  animation: move-forever1 2s linear infinite;
+}
+
+.wave2 use {
+  animation: move-forever2 1s linear infinite;
+}
+
+.wave3 use {
+  animation: move-forever3 9s linear infinite;
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(45px, 0%);
+  }
+  100% {
+    transform: translate(-50px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-50px, 0%);
+  }
+  100% {
+    transform: translate(45px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-50px, 0%);
+  }
+  100% {
+    transform: translate(45px, 0%);
+  }
+}
   /* Quran */
   .quran {
     padding: 3rem 1rem;
@@ -1231,6 +1390,13 @@ footer .credit h5 {
   .quran .row {
     flex-wrap: wrap;
   }
+
+  .quran .row .quran-img {
+    flex: 1 1 45rem;
+    width:20%;
+    padding: 0 0 5rem;
+  }
+
   .quran .row .quran-img img {
     width: 100%;
     object-fit: cover;
@@ -1241,91 +1407,137 @@ footer .credit h5 {
     padding: 0;
     margin-top: 2rem;
   }
+
+  .quran .row .content h3 {
+    font-family: "Crete Round", Sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+    /* font-style: italic; */
+  }
+  
   .quran .row .content p {
     padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-weight: normal;
+    font-style: italic;
+    color: #AE9250;
+    font-family: "Dosis", Sans-serif;
+    line-height: 1.7em;
   }
-
-  /* about */
   .about {
     padding: 4rem 0;
   }
+
   .about .row {
     flex-wrap: wrap;
+    text-align: center;
   }
+
+  .about .row .about-img {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
   .about .row .about-img img {
-    height: 50rem;
+    height: auto;
     width: 75%;
     padding: 0;
     object-fit: cover;
     object-position: center;
     box-shadow: 0.8rem 0.8rem 2.4rem rgba(58, 79, 71, 0.8);
   }
+
+  .about .row .about-img .overlay-img {
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+    width: 50%;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
+  }
+
   .about .row .content {
-    text-align: left;
+    flex: 0 0 100%;
     padding: 4rem 7%;
+    text-align: center;
   }
+
   .about .row .content h3 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
+
   .about .row .content p {
-    font-size: 1.6rem;
-    margin: 0rem;
+    font-size: 1.2rem;
   }
+
   .about .row .content span {
     font-size: 1.6rem;
   }
-  .about .row .content i {
-    font-size: 1rem;
-  }
-  .cba {
-    padding: 0.5rem 1.8rem;
-    margin-top: 1rem;
-  }
-  .about2 {
-    padding: 6rem 0;
-  }
-  .about2 .row {
-    flex-wrap: wrap;
-  }
-  .about2 .row .about2-img {
-    order: 1;
-    flex: 0 0 100%;
-    text-align: right;
-  }
-  .about2 .row .about2-img img {
-    height: 55rem;
-    width: 75%;
-    padding: 0;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 0.8rem 0.8rem 2.4rem rgba(58, 79, 71, 0.8);
-  }
-  .about2 .row .content {
-    order: 1;
-    flex: 0 0 100%;
-    padding: 1.5rem 7%;
-    margin-top: 0.5rem;
-    text-align: right;
-  }
-  .about2 .row .content h3 {
-    font-size: 2.8rem;
-    margin-top: 0.7rem;
-  }
-  .about2 .row .content p {
-    font-size: 1.6rem;
-    margin: 0rem;
-  }
-  .about2 .row .content span {
-    font-size: 1.6rem;
-  }
-  .about2 .row .content i {
-    font-size: 1rem;
-  }
+
   .cba {
     padding: 0.5rem 1.8rem;
     margin-top: 1rem;
   }
 
+  /* about2 */
+  .about2 {
+    padding: 6rem 0;
+  }
+
+  .about2 .row {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .about2 .row .about2-img {
+    flex: 0 0 100%;
+    text-align: center;
+  }
+
+  .about2 .row .about2-img img {
+    height: auto;
+    width: 75%;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0.8rem 0.8rem 2.4rem rgba(58, 79, 71, 0.8);
+  }
+
+  .about2 .row .about2-img .overlay-img {
+    position: absolute;
+    top: 20rem;
+    left: 5rem;
+    width: 50%;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
+  }
+
+  .about2 .row .content {
+    flex: 0 0 100%;
+    padding: 1.5rem 7%;
+    text-align: center;
+  }
+
+  .about2 .row .content h3 {
+    font-size: 3rem;
+    margin-top: 0.7rem;
+  }
+
+  .about2 .row .content p {
+    font-size: 1.2rem;
+  }
+
+  .about2 .row .content span {
+    font-size: 1.6rem;
+  }
+
+  .cba {
+    padding: 0.5rem 1.8rem;
+    margin-top: 1rem;
+  }
   /* event */
   .event .card {
     flex-wrap: wrap;
@@ -1484,11 +1696,6 @@ footer .credit h5 {
   border-radius: 8px; /* Opsional: menambahkan border radius pada video */
 }
 
-.gradient-transition {
-  height: 50px; /* Sesuaikan tinggi transisi */
-  background: linear-gradient(to bottom, transparent, #f0f0f0); /* Gradien dari transparan ke warna latar belakang section berikutnya */
-   z-index: 1; /* Pastikan gradien berada di atas foto */
-}
 .hero::after {
   content: "";
   position: absolute;
@@ -1496,7 +1703,75 @@ footer .credit h5 {
   left: 0;
   width: 100%;
   height: 50px; /* Sesuaikan tinggi gradien */
-  background: linear-gradient(to bottom, transparent, #f0f0f0); /* Gradien dari transparan ke warna latar belakang section berikutnya */
+  /* background: linear-gradient(to bottom, transparent, #f0f0f0); Gradien dari transparan ke warna latar belakang section berikutnya */
   pointer-events: none; /* Pastikan elemen ini tidak mengganggu interaksi */
 }
 
+.mask-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mask-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" opacity="0.13" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path><path class="elementor-shape-fill" opacity="0.26" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path><path class="elementor-shape-fill" opacity="0.13" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" opacity="0.13" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path><path class="elementor-shape-fill" opacity="0.26" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path><path class="elementor-shape-fill" opacity="0.13" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path></svg>');
+}
+
+.hero-waves {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  z-index: 3;
+}
+
+.wave1 use {
+  animation: move-forever1 10s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  animation: move-forever2 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  animation: move-forever3 6s linear infinite;
+  animation-delay: -2s;
+  fill: #ffffff !important; /* Solid white color */
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
+}

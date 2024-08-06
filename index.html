@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="The Wedding OF : Utsman & Yani">
+    <meta property="og:title" content="The Wedding OF : Ajip & Tu Ita">
     <meta property="og:description" content="Minggu, 30 Juli 2023">
     <meta property="og:image" content="https://i.ibb.co/p2xrqXN/Utsman.png">
     <meta property="og:url" content="https://masreyxlvi.github.io/Utsman-Yani/">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Lightbox -->
     <link rel="stylesheet" href="css/lightbox.css">
-    <title>The Wedding Of : Utsman & Yani Mulyani</title>
+    <title>The Wedding Of : Ajip & Tu Ita</title>
     <link rel="shortcut icon" href="images/cipepic new logo.png" />
     <!-- toastr -->
     <link rel="stylesheet" href="assets/toastr/toastr.min.css">
@@ -35,7 +35,15 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
     <!-- <script type="module" src="firebase-database.js"></script> -->
 
-    <!-- Add other Firebase SDKs that you need -->
+      <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   </head>
 
@@ -46,13 +54,18 @@
       <div class="popup-overlay"></div>
       <div class="popup-container">
         <div class="popup-content">
+          <h2 class="example4" data-aos="fade-down" data-aos-delay="800">The Wedding of</h2>
           <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">
-            Utsman <span> &</span> Yani.
+            Ajip <span> &</span> Tu Ita.
           </h1>
-          <h2 class="example2" data-aos="fade-down" data-aos-delay="800">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
-          <h2 id="guestName"></h2> <!-- Add this line where you want to display the guest's name -->
+          <h2 class="example5" data-aos="fade-down" data-aos-delay="800">Minggu, 30 April 2023</h2>
           
-          <button data-aos="fade-up" data-aos-delay="800" class="close"> Buka Undangan</button>
+          <div class="popup-content-sub">
+            <h2 class="example2" data-aos="fade-down" data-aos-delay="800">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
+            <h2 class="example3" id="guestName" data-aos="fade-down" data-aos-delay="800">Evi Dianasari</h2> <!-- Add this line where you want to display the guest's name -->
+            
+            <button data-aos="fade-up" data-aos-delay="800" class="close"> Buka Undangan</button>
+          </div>
           <audio id="popupAudio" src="audio/LoveLikeYou.mp3"></audio> <!-- Ganti dengan path file audio yang sesuai -->
         </div>
       </div>
@@ -68,14 +81,19 @@
     <section class="hero" id="home">
       <div class="popup-overlay"></div>
       <div class="slider">
-        <img src="images/hero/hero1.JPG" alt="" class="slide">
-        <img src="images/hero/hero2.JPG" alt="" class="slide">
-        <img src="images/hero/hero3.JPG" alt="" class="slide">
+        
+          
+          <img src="images/hero/hero1.JPG" alt="" class="slide">
+          <img src="images/hero/hero2.JPG" alt="" class="slide">
+          <img src="images/hero/hero3.JPG" alt="" class="slide">
+          
       </div>
+      
+      
       <div class="content">
         <h4>Pawiwahan</h4>
-        <h1>Utsman <span> &</span> Yani</h1>
-        <a href="">Save The Date | <span>30 . 09 . 2024</span></a>
+        <h1>Ajip <span> &</span> Tu Ita</h1>
+        <!-- <a href="">Save The Date | <span>30 . 09 . 2024</span></a> -->
         <div class="countdown" id="countdown">
           <div class="waktu">
             <h5 id="days"></h5>
@@ -94,54 +112,150 @@
             <p>Seconds</p>
           </div>
         </div>
+        
       </div>
-      
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+        </g>
+      </svg>
+
     </section>
+    
     <!-- hero section end -->
-<!-- Gradien Transisi -->
-<div class="gradient-transition"></div>
+
+<!-- <div class="gradient-transition"></div> -->
     <!-- section quran start -->
     <section class="quran" id="quran">
       <div class="row">
           <div class="content">
-            <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">"Ya Tuhanku Yang Maha Pengasih, anugrahkanlah kepada pasangan ini senantiasa kebahagiaan, kesehatan, tetap bersatu dan tidak pernah terpisahkan, panjang umur dan tinggal di rumah yang penuh kegembiraan bersama seluruh keturunannya"</p>
-            <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">- Rg Veda X.85.42. -</h3>
+            <img src="https://storage.googleapis.com/stateless-inv-swalapatra-com/2023/06/db822cc5-flower.png" alt="" class="quran-img">
+            <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">"Dalam sebuah pernikahan kalian disatukan demi sebuah kebahagiaan dengan janji hati untuk saling membahagiakan. Bersamaku engkau akan hidup selamanya karena Tuhan pasti akan memberikan karunia sebagai pelindung dan saksi dalam pernikahan ini. Untuk itulah kalian dipersatukan dalam satu keluarga."</p>
+            <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">{Rg Veda X.85.42}</h3>
           </div>
       </div>
     </section>
     <!-- section quran end -->
 
-    <!-- section about start -->
-    <section class="about" id="about">
-      <div class="row">
-        <div class="about-img" data-aos="zoom-in-up">
-          <img src="images/utsman.jpg" alt="about" />
-        </div>
-        <div class="content">
-          <h3 data-aos="fade-up" >Utsman</h3>
-          <p data-aos="fade-up" data-aos-delay="300"  >Putra Pertama Dari :</p>
-          <span data-aos="fade-up" data-aos-delay="300" >Bapak Didin dan Ibu Papat.</span>
-          <a href="https://instagram.com/utsman520?igshid=MzNlNGNkZWQ4Mg==" data-aos="fade-up" data-aos-duration="2000" target="_blank" class="cba"><i data-feather="instagram" style="vertical-align: middle"></i> INSTAGRAM</a>
-        </div>
-      </div>
-    </section>
-    <!-- section about end -->
+ <!-- section about start -->
+<section class="about" id="about">
+  <div class="row">
+    <div class="content">
+      <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
+      <h3 data-aos="fade-up">Gede Ajip Pratama</h3>
+      <p data-aos="fade-up" data-aos-delay="300">Putra Pertama dari pasangan <br> Bapak I Ketut Martana dan Ibu Ni Komang Wardani</p>
+    </div>
+    <div class="about-img" data-aos="zoom-in-up">
+      <img src="images/ajip.jpg" alt="about" />
+      <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay">
+    </div>
+  </div>
+</section>
+<!-- section about end -->
 
-    <!-- section about2 start -->
-    <section class="about2" id="about2">
-      <div class="row">
-        <div class="about2-img" data-aos="zoom-in-up">
-          <img src="images/yani.jpg" alt="about2" />
-        </div>
-        <div class="content">
-          <h3 data-aos="fade-up">Yani Mulyani</h3>
-          <p data-aos="fade-up" data-aos-delay="300">Putri Kedua Dari :</p>
-          <span data-aos="fade-up" data-aos-delay="300">Bapak Umar (Alm) dan Ibu Mastoah</span>
-          <a href="https://instagram.com/_yniivzyus?igshid=OGQ5ZDc2ODk2ZA==" data-aos="fade-up" data-aos-duration="2000" target="_blank" class="cba"><i data-feather="instagram" style="vertical-align: middle"></i> INSTAGRAM</a>
+<!-- section about2 start -->
+<section class="about2" id="about2">
+  <div class="row">
+    <div class="content">
+      <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
+      <h3 data-aos="fade-up">Ni Luh Putu Puspita Dewi</h3>
+      <p data-aos="fade-up" data-aos-delay="300">Putri Kedua Dari <br>Bapak I Putu Sudiarta dan Ibu Ni Wayan Perni</p>
+    </div>
+    <div class="about2-img" data-aos="zoom-in-up">
+      <img src="images/tuta.jpg" alt="about2" />
+      <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay">
+    </div>
+
+  </div>
+</section>
+<!-- section about2 end -->
+
+<!-- Wedding event start -->
+<section class="bg-event">
+  <main class="event" id="date">
+    <h2 data-aos="fade-right">Wedding <span>Event</span></h2>
+
+    <div class="card" data-aos="fade-up-right" data-aos-delay="1000" data-aos-duration="1000">
+      <div class="box-img">
+        <div class="slider-img">
+          <img src="images/event/event.JPG" alt="" class="event-img" />
+          <img src="images/event/event1.JPG" alt="" class="event-img" />
+          <img src="images/event/event2.JPG" alt="" class="event-img" />
+          
         </div>
       </div>
-    </section>
-    <!-- section about2 end -->
+      <div class="box-date">
+        <div class="title-event">
+          <h3>Akad Nikah </h3>
+        </div>
+        <div class="date-event"> 
+          <div class="tgl">
+            <h4>26</h4>
+          </div>
+          <div class="detail">
+            <h5>Rabu</h5>
+            <h5>Juli</h5>
+            <h5>2023</h5>
+          </div>
+
+          <div class="jam">
+            <p><i data-feather="clock" style="color: #000;"></i> 09.00 WIB </p>
+            <div class="lokasi">
+              <h5>Lokasi Acara</h5>
+              <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
+              <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="cbt">Google Maps</a>
+           </div>
+          </div>
+       </div>
+    </div>
+  </main>
+  <main class="event-2" id="date">
+
+    <div class="card" data-aos="fade-up-left" data-aos-duration="1000"  data-aos-delay="1000"> 
+      <div class="box-img">
+        <div class="slider-img">
+          <img src="images/event/event4.JPG" alt="" class="event-2-img" />
+          <img src="images/event/event5.JPG" alt="" class="event-2-img" />
+          <img src="images/event/event6.JPG" alt="" class="event-2-img" /> 
+        </div>
+      </div>
+      <div class="box-date">
+        <div class="title-event-2">
+          <h3>Resepsi </h3>
+        </div>
+        <div class="date-event-2"> 
+          <div class="tgl">
+            <h4>30</h4>
+          </div>
+          <div class="detail">
+            <h5>Minggu</h5>
+            <h5>Juli</h5>
+            <h5>2023</h5>
+          </div>
+
+          <div class="jam">
+            <p><i data-feather="clock" style="color: #000;"></i> 10.00 WIB </p>
+            <div class="lokasi">
+              <h5>Lokasi Acara</h5>
+              <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
+              <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" class="cbt">Google Maps</a>
+           </div>
+          </div>
+       </div>
+    </div>
+  </main>
+</section>
+<!-- end Event Section-->
+
 
     <!-- section Story start -->
     <section class="story" id="story">
@@ -162,82 +276,6 @@
       </div>
     </section>
     <!-- section Story end -->
-
-    <section class="bg-event">
-      <main class="event" id="date">
-        <h2 data-aos="fade-right">Wedding <span>Event</span></h2>
-  
-        <div class="card" data-aos="fade-up-right" data-aos-delay="1000" data-aos-duration="1000">
-          <div class="box-img">
-            <div class="slider-img">
-              <img src="images/event/event.JPG" alt="" class="event-img" />
-              <img src="images/event/event1.JPG" alt="" class="event-img" />
-              <img src="images/event/event2.JPG" alt="" class="event-img" />
-              
-            </div>
-          </div>
-          <div class="box-date">
-            <div class="title-event">
-              <h3>Akad Nikah </h3>
-            </div>
-            <div class="date-event"> 
-              <div class="tgl">
-                <h4>26</h4>
-              </div>
-              <div class="detail">
-                <h5>Rabu</h5>
-                <h5>Juli</h5>
-                <h5>2023</h5>
-              </div>
-
-              <div class="jam">
-                <p><i data-feather="clock" style="color: #000;"></i> 09.00 WIB </p>
-                <div class="lokasi">
-                  <h5>Lokasi Acara</h5>
-                  <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
-                  <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="cbt">Google Maps</a>
-               </div>
-              </div>
-           </div>
-        </div>
-      </main>
-      <main class="event-2" id="date">
-  
-        <div class="card" data-aos="fade-up-left" data-aos-duration="1000"  data-aos-delay="1000"> 
-          <div class="box-img">
-            <div class="slider-img">
-              <img src="images/event/event4.JPG" alt="" class="event-2-img" />
-              <img src="images/event/event5.JPG" alt="" class="event-2-img" />
-              <img src="images/event/event6.JPG" alt="" class="event-2-img" /> 
-            </div>
-          </div>
-          <div class="box-date">
-            <div class="title-event-2">
-              <h3>Resepsi </h3>
-            </div>
-            <div class="date-event-2"> 
-              <div class="tgl">
-                <h4>30</h4>
-              </div>
-              <div class="detail">
-                <h5>Minggu</h5>
-                <h5>Juli</h5>
-                <h5>2023</h5>
-              </div>
-
-              <div class="jam">
-                <p><i data-feather="clock" style="color: #000;"></i> 10.00 WIB </p>
-                <div class="lokasi">
-                  <h5>Lokasi Acara</h5>
-                  <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
-                  <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" class="cbt">Google Maps</a>
-               </div>
-              </div>
-           </div>
-        </div>
-      </main>
-    </section>
-    <!-- end Event Section-->
 
     <!-- Start Galley Section -->
      <div class="bg-gallery">
@@ -267,8 +305,8 @@
             <a href="images/gallery/11.JPG" data-lightbox="models" data-title="Caption7">
               <img src="images/gallery/11.JPG" alt="" class="img">
             </a>
-            <a href="images/event/event5.JPG" data-lightbox="models" data-title="Caption8">
-              <img src="images/event/event5.JPG" alt="" class="img">
+            <a href="images/gallery/12.JPG" data-lightbox="models" data-title="Caption8">
+              <img src="images/gallery/12.JPG" alt="" class="img">
             </a>
         
           </div>
@@ -277,15 +315,15 @@
     </div>
     <!-- End Galley Section-->
     <!-- Start video section -->
-    <div class="video-section">
+    <!-- <div class="video-section">
       <video controls>
         <source src="video/vid1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-    </div>
+    </div> -->
     <!-- end video section -->
     <!-- Start Wedding gift -->
-    <section class="gift" id="gift">
+    <!-- <section class="gift" id="gift">
       <h2 data-aos="fade-down" >Wedding Gift</h2>
       <p data-aos="fade-up" data-aos-delay="0">Bagi bapak/ibu/saudara/i yang ingin mengirimkan hadiah pernikahan dapat melalui virtual account atau e-wallet di bawah ini:</p>
       <div class="buttom" data-aos="fade-up" >
@@ -306,7 +344,7 @@
         </div>
     
       </div>
-    </section>
+    </section> -->
     <!-- End Wedding gift -->
     <!-- Start RSVP -->
     <section class="rsvp">
@@ -343,7 +381,7 @@
         <h1 >TerimaKasih</h1>
         <h4>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada kami.</h4>
         <h4 style="margin-top: 8rem;" >KAMI YANG BERBAHAGIA</h4>
-        <h3 >Utsman <span>&</span> Yani</h3>
+        <h3 >Ajip <span>&</span> Tu Ita</h3>
       </div>
     </section> 
     <!-- End Doa -->
@@ -419,6 +457,14 @@
         document.getElementById('guestName').textContent = `Dear ${guestName}`;
       }
     </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
     
   </body>
 </html>
