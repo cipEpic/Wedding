@@ -30,21 +30,23 @@ function hidePopup() {
     popup.style.transform = "translateY(0)"; // Reset transformasi saat popup disembunyikan
   }, 5000); // Waktu yang sesuai dengan durasi transisi
 }
-
-function pause() {
+// Fungsi untuk toggle audio (mute/unmute)
+function toggleAudio() {
   var popupAudio = document.getElementById("popupAudio");
-  if (isAudioPlaying) {
-    popupAudio.pause(); // Menghentikan lagu jika sedang diputar
-    isAudioPlaying = false;
+  if (popupAudio.paused) {
+    popupAudio.play();
+    audioIcon.classList.remove("fa-play-circle");
+    audioIcon.classList.add("fa-stop-circle");
   } else {
-    popupAudio.play(); // Memulai kembali lagu jika tidak sedang diputar
-    isAudioPlaying = true;
+    popupAudio.pause();
+    audioIcon.classList.remove("fa-stop-circle");
+    audioIcon.classList.add("fa-play-circle");
   }
 }
 
-// Tambahkan event listener pada tombol tutup
+// Tambahkan event listener pada tombol tutup dan tombol audio control
 closeBtn.addEventListener("click", hidePopup);
-logo.addEventListener("click", pause);
+audioControl.addEventListener("click", toggleAudio);
 // Tampilkan popup setelah halaman dimuat
 window.onload = showPopup;
 
@@ -108,18 +110,18 @@ var x = setInterval(function () {
 }, 1000);
 
 // Show Cards
-const showCardButton = document.getElementById("show-cards");
-const cardContainer = document.getElementById("card-container");
-const cards = document.querySelectorAll(".card");
+// const showCardButton = document.getElementById("show-cards");
+// const cardContainer = document.getElementById("card-container");
+// const cards = document.querySelectorAll(".card");
 
-showCardButton.addEventListener("click", function () {
-  cardContainer.classList.toggle("show");
-  if (cardContainer.classList.contains("show")) {
-    showCardsSequentially();
-  } else {
-    resetCardStyles();
-  }
-});
+// showCardButton.addEventListener("click", function () {
+//   cardContainer.classList.toggle("show");
+//   if (cardContainer.classList.contains("show")) {
+//     showCardsSequentially();
+//   } else {
+//     resetCardStyles();
+//   }
+// });
 
 function showCardsSequentially() {
   cards.forEach((card, index) => {

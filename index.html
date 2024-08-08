@@ -30,6 +30,9 @@
     <!-- Aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
     <!-- Firebase App (the core Firebase SDK) is always required and must be first -->
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
@@ -72,11 +75,12 @@
     </div>
     
     <!-- popup end -->
-    <!-- my Logo  -->
-    <!-- Elemen logo -->
-      <div id="logo">
-        <img src="images/logo.png" alt="Logo" />
-      </div>
+    
+    <!-- Mute/Unmute Button -->
+    <div id="audioControl" class="audio-control">
+      <i id="audioIcon" class="fa fa-stop-circle"></i>
+    </div>
+
     <!-- hero section start -->
     <section class="hero" id="home">
       <div class="popup-overlay"></div>
@@ -182,70 +186,33 @@
 <!-- Wedding event start -->
 <section class="bg-event">
   <main class="event" id="date">
-
     <div class="card" data-aos="fade-up-right" data-aos-delay="1000" data-aos-duration="1000">
       <div class="box-date">
         <div class="title-event">
-          <h3>Akad Nikah </h3>
+          <h3>Resepsi Pernikahan</h3>
         </div>
-        <div class="date-event"> 
+        <div class="date-event">
           <div class="tgl">
-            <h4>26</h4>
+            <i class="far fa-calendar"></i>
+            <h5>Rabu, 26 Juli 2023</h5>
           </div>
-          <div class="detail">
-            <h5>Rabu</h5>
-            <h5>Juli</h5>
-            <h5>2023</h5>
-          </div>
-
           <div class="jam">
-            <p><i data-feather="clock" style="color: #000;"></i> 09.00 WIB </p>
-            <div class="lokasi">
-              <h5>Lokasi Acara</h5>
-              <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
-              <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="cbt">Google Maps</a>
-           </div>
+            <i class="far fa-clock"></i>
+            <p> 09.00 WIB</p>
           </div>
-       </div>
-    </div>
-  </main>
-  <!-- <main class="event-2" id="date">
-
-    <div class="card" data-aos="fade-up-left" data-aos-duration="1000"  data-aos-delay="1000"> 
-      <div class="box-img">
-        <div class="slider-img">
-          <img src="images/event/event4.JPG" alt="" class="event-2-img" />
-          <img src="images/event/event5.JPG" alt="" class="event-2-img" />
-          <img src="images/event/event6.JPG" alt="" class="event-2-img" /> 
+          <div class="lokasi">
+            <i class="far fa-clock"></i>
+            <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
+            <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="cbt"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+          </div>
         </div>
       </div>
-      <div class="box-date">
-        <div class="title-event-2">
-          <h3>Resepsi </h3>
-        </div>
-        <div class="date-event-2"> 
-          <div class="tgl">
-            <h4>30</h4>
-          </div>
-          <div class="detail">
-            <h5>Minggu</h5>
-            <h5>Juli</h5>
-            <h5>2023</h5>
-          </div>
-
-          <div class="jam">
-            <p><i data-feather="clock" style="color: #000;"></i> 10.00 WIB </p>
-            <div class="lokasi">
-              <h5>Lokasi Acara</h5>
-              <p>Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</p>
-              <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" class="cbt">Google Maps</a>
-           </div>
-          </div>
-       </div>
     </div>
-  </main> -->
+  </main>
 </section>
-<!-- end Event Section-->
+<!-- end Event Section -->
+
+
 
 
     <!-- section Story start -->
@@ -381,17 +348,17 @@
     <footer>
       <div class="logo" >
         <img src="images/logo.png" alt="logo">
-        <a href="#" style="vertical-align: middle">Masreyxlvi.com</a>
+        <!-- <a href="#" style="vertical-align: middle">Masreyxlvi.com</a> -->
       </div>
       <div class="socials" >
         <a href="" class="wa"  >
-          WA : 0813 1336 2467 
+          WA : 0855 3655 3592 
         </a>
-        <a href="" class="ig"  >| IG : @masreyxlvi</a>
+        <a href="" class="ig"  >| IG : @nked.s</a>
       </div>
       <div class="credit" >
-        <p>Copyright &copy; 2022 - 2023</p>
-        <h5>HUBUNGI KAMI</h5>
+        <p>Copyright &copy; 2024</p>
+        <!-- <h5>HUBUNGI KAMI</h5> -->
       </div>
     </footer>
     <!-- end footer -->
