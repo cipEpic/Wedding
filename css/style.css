@@ -1526,8 +1526,19 @@ footer .credit h5 {
 
 
   /* gallery */
+  .gallery {
+    padding: 7rem 1% 1.4rem;
+  }
+
   .gallery .container .img-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* One image at a time */
+  }
+
+  .gallery .container .img-gallery img {
+    width: auto; /* Maintain original width */
+    height: auto; /* Maintain original height */
+    max-width: 100%; /* Ensure the image fits within the container */
+    aspect-ratio: auto; /* Allow images to maintain their natural aspect ratio */
   }
 
   /* gift */
