@@ -1696,3 +1696,36 @@ footer .credit h5 {
   color: #000; /* Adjust the color as needed */
 }
 
+/* For smaller screens, like 320x590 */
+@media (max-width: 590px) {
+  .popup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem; /* Reduce padding to fit content */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .popup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure vertical alignment */
+  }
+
+  .popup-content-sub {
+    padding-top: 5rem; /* Adjust padding to avoid overflow */
+    margin-top: 0;
+  }
+
+  .popup-content h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .popup-content .close {
+    font-size: 1rem; /* Adjust button size */
+    padding: 0.5rem 1rem; /* Adjust padding for smaller buttons */
+  }
+}
