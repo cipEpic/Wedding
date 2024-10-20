@@ -1697,7 +1697,7 @@ footer .credit h5 {
 }
 
 /* For smaller screens, like 320x590 */
-@media (max-width: 590px) {
+@media (max-width: 360px) {
   .popup-container {
     min-height: 100vh;
     display: flex;
