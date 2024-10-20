@@ -53,7 +53,7 @@
   <body>
     
     <!-- popup start -->
-    <div id="myPopup" class="popup">
+    <div id="myPopup" class="popup" style="display: block;">
       <div class="popup-overlay"></div>
       <div class="popup-container">
         <div class="popup-content">
@@ -546,6 +546,26 @@
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Menampilkan popup segera setelah halaman dimuat
+  const popup = document.getElementById("myPopup");
+  popup.style.display = "block";
+
+  // Menambahkan event untuk menutup popup ketika tombol ditekan
+  const closeButton = document.querySelector(".close");
+  closeButton.addEventListener("click", function() {
+    popup.style.display = "none";
+  });
+});
+
+closeButton.addEventListener("click", function() {
+  popup.style.display = "none";
+  document.body.classList.add("popup-closed");
+});
+
+
+</script>
 
 
     <!-- Vendor JS Files -->

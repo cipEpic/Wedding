@@ -159,6 +159,15 @@ body {
   color: var(--warning);
 }
 
+/* Sembunyikan konten utama saat popup aktif */
+/* #home {
+  display: none;
+} */
+
+/* Setelah popup ditutup, tampilkan konten utama */
+/* .popup-closed #home {
+  display: block;
+} */
 
 /* Gaya untuk tombol tutup */
 .close {
