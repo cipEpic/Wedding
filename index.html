@@ -1,189 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="The Wedding OF : Ajip & Tu Ita">
-    <meta property="og:description" content="Minggu, 30 Juli 2023">
-    <meta property="og:image" content="https://raw.githubusercontent.com/cipEpic/Wedding/refs/heads/main/images/hero/hero2.JPG">
-    <meta property="og:url" content="https://wedding-alpha-eight.vercel.app/">
-    <meta property="og:type" content="website">
 
-    <!-- my fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="The Wedding OF : Ajip & Puspita">
+  <meta property="og:description" content="Minggu, 30 Juli 2023">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/cipEpic/Wedding/refs/heads/main/images/hero/hero2.JPG">
+  <meta property="og:url" content="https://wedding-alpha-eight.vercel.app/">
+  <meta property="og:type" content="website">
 
-    <!-- father icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- my fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet" />
 
-    <!-- my css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Lightbox -->
-    <link rel="stylesheet" href="css/lightbox.css">
-    <title>The Wedding Of : Ajip & Tu Ita</title>
-    <link rel="shortcut icon" href="images/cipepic new logo.png" />
-    <!-- toastr -->
-    <link rel="stylesheet" href="assets/toastr/toastr.min.css">
-    <!-- sweaatalert -->
-    <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css">
-    <!-- Aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- father icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- my css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="css/lightbox.css">
+  <title>The Wedding Of : Ajip & Puspita</title>
+  <link rel="shortcut icon" href="images/cipepic new logo.png" />
+  <!-- toastr -->
+  <link rel="stylesheet" href="assets/toastr/toastr.min.css">
+  <!-- sweaatalert -->
+  <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css">
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be first -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
-    <!-- <script type="module" src="firebase-database.js"></script> -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
+  <!-- <script type="module" src="firebase-database.js"></script> -->
 
-      <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
-    
-    <!-- popup start -->
-    <div id="myPopup" class="popup" style="display: block;">
-      <div class="popup-overlay"></div>
-      <div class="popup-container">
-        <div class="popup-content">
-          <h2 class="example4" data-aos="fade-down" data-aos-delay="800">The Wedding of</h2>
-          <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">
-            Ajip <span> &</span> Tu Ita.
-          </h1>
-          <h2 class="example5" data-aos="fade-down" data-aos-delay="800">Minggu, 30 April 2023</h2>
-          
-          <div class="popup-content-sub">
-            <h2 class="example2" data-aos="fade-down" data-aos-delay="800">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
-            <h2 class="example3" id="guestName" data-aos="fade-down" data-aos-delay="800"></h2> <!-- Add this line where you want to display the guest's name -->
-            
-            <button data-aos="fade-up" data-aos-delay="800" class="close"> Buka Undangan</button>
-          </div>
-          <audio id="popupAudio" src="audio/LoveLikeYou.mp3"></audio> <!-- Ganti dengan path file audio yang sesuai -->
+<body>
+
+  <!-- popup start -->
+  <div id="myPopup" class="popup" style="display: block;">
+    <div class="popup-overlay"></div>
+    <div class="popup-container">
+      <div class="popup-content">
+        <h2 class="example4" data-aos="fade-down" data-aos-delay="800">The Wedding of</h2>
+        <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="2000">
+          Ajip <span> &</span> Puspita.
+        </h1>
+        <h2 class="example5" data-aos="fade-down" data-aos-delay="800">Minggu, 30 April 2023</h2>
+
+        <div class="popup-content-sub">
+          <h2 class="example2" data-aos="fade-down" data-aos-delay="800">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
+          <h2 class="example3" id="guestName" data-aos="fade-down" data-aos-delay="800"></h2>
+          <!-- Add this line where you want to display the guest's name -->
+
+          <button data-aos="fade-up" data-aos-delay="800" class="close"> Buka Undangan</button>
+        </div>
+        <audio id="popupAudio" src="audio/LoveLikeYou.mp3"></audio> <!-- Ganti dengan path file audio yang sesuai -->
+      </div>
+    </div>
+  </div>
+
+  <!-- popup end -->
+
+  <!-- Mute/Unmute Button -->
+  <div id="audioControl" class="audio-control">
+    <i id="audioIcon" class="fa fa-stop-circle"></i>
+  </div>
+
+  <!-- hero section start -->
+  <section class="hero" id="home">
+    <div class="popup-overlay"></div>
+    <div class="slider">
+
+
+      <img src="images/hero/hero1.JPG" alt="" class="slide">
+      <img src="images/hero/hero2.JPG" alt="" class="slide">
+      <img src="images/hero/hero3.JPG" alt="" class="slide">
+
+    </div>
+
+
+    <div class="content">
+      <h4>Pawiwahan</h4>
+      <h1>Ajip <span> &</span> Puspita</h1>
+      <!-- <a href="">Save The Date | <span>30 . 09 . 2024</span></a> -->
+      <div class="countdown" id="countdown">
+        <div class="waktu">
+          <h5 id="days"></h5>
+          <p>Days</p>
+        </div>
+        <div class="waktu">
+          <h5 id="hours"></h5>
+          <p>Hours</p>
+        </div>
+        <div class="waktu">
+          <h5 id="minutes"></h5>
+          <p>Minutes</p>
+        </div>
+        <div class="waktu">
+          <h5 id="seconds"></h5>
+          <p>Seconds</p>
         </div>
       </div>
-    </div>
-    
-    <!-- popup end -->
-    
-    <!-- Mute/Unmute Button -->
-    <div id="audioControl" class="audio-control">
-      <i id="audioIcon" class="fa fa-stop-circle"></i>
-    </div>
 
-    <!-- hero section start -->
-    <section class="hero" id="home">
-      <div class="popup-overlay"></div>
-      <div class="slider">
-        
-          
-          <img src="images/hero/hero1.JPG" alt="" class="slide">
-          <img src="images/hero/hero2.JPG" alt="" class="slide">
-          <img src="images/hero/hero3.JPG" alt="" class="slide">
-          
-      </div>
-      
-      
+    </div>
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+      </g>
+    </svg>
+
+  </section>
+
+  <!-- hero section end -->
+
+  <!-- <div class="gradient-transition"></div> -->
+  <!-- section quran start -->
+  <section class="quran" id="quran">
+    <div class="row">
       <div class="content">
-        <h4>Pawiwahan</h4>
-        <h1>Ajip <span> &</span> Tu Ita</h1>
-        <!-- <a href="">Save The Date | <span>30 . 09 . 2024</span></a> -->
-        <div class="countdown" id="countdown">
-          <div class="waktu">
-            <h5 id="days"></h5>
-            <p>Days</p>
-          </div>
-          <div class="waktu">
-            <h5 id="hours"></h5>
-            <p>Hours</p>
-          </div>
-          <div class="waktu">
-            <h5 id="minutes"></h5>
-            <p>Minutes</p>
-          </div>
-          <div class="waktu">
-            <h5 id="seconds"></h5>
-            <p>Seconds</p>
-          </div>
-        </div>
-        
+        <img src="https://storage.googleapis.com/stateless-inv-swalapatra-com/2023/06/db822cc5-flower.png" alt=""
+          class="quran-img">
+        <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">"Dalam sebuah pernikahan kalian disatukan
+          demi sebuah kebahagiaan dengan janji hati untuk saling membahagiakan. Bersamaku engkau akan hidup selamanya
+          karena Tuhan pasti akan memberikan karunia sebagai pelindung dan saksi dalam pernikahan ini. Untuk itulah
+          kalian dipersatukan dalam satu keluarga."</p>
+        <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">{Rg Veda X.85.42}</h3>
       </div>
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
-        <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-        </g>
-      </svg>
+    </div>
+  </section>
+  <!-- section quran end -->
 
-    </section>
-    
-    <!-- hero section end -->
-
-<!-- <div class="gradient-transition"></div> -->
-    <!-- section quran start -->
-    <section class="quran" id="quran">
-      <div class="row">
-          <div class="content">
-            <img src="https://storage.googleapis.com/stateless-inv-swalapatra-com/2023/06/db822cc5-flower.png" alt="" class="quran-img">
-            <p data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">"Dalam sebuah pernikahan kalian disatukan demi sebuah kebahagiaan dengan janji hati untuk saling membahagiakan. Bersamaku engkau akan hidup selamanya karena Tuhan pasti akan memberikan karunia sebagai pelindung dan saksi dalam pernikahan ini. Untuk itulah kalian dipersatukan dalam satu keluarga."</p>
-            <h3 data-aos="fade-up" data-aos-delay="700" data-aos-duration="2000">{Rg Veda X.85.42}</h3>
-          </div>
+  <!-- section about start -->
+  <section class="about" id="about">
+    <div class="row">
+      <div class="content">
+        <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
+        <h3 data-aos="fade-up">Gede Ajip Pratama</h3>
+        <p data-aos="fade-up" data-aos-delay="300">Putra Pertama dari pasangan <br> Bapak I Ketut Martana dan Ibu Ni
+          Komang Wardani</p>
       </div>
-    </section>
-    <!-- section quran end -->
+      <div class="about-img" data-aos="zoom-in-up">
+        <img src="images/ajip.png" alt="about" />
+        <!-- <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay"> -->
+      </div>
+    </div>
+  </section>
+  <!-- section about end -->
 
- <!-- section about start -->
-<section class="about" id="about">
-  <div class="row">
-    <div class="content">
-      <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
-      <h3 data-aos="fade-up">Gede Ajip Pratama</h3>
-      <p data-aos="fade-up" data-aos-delay="300">Putra Pertama dari pasangan <br> Bapak I Ketut Martana dan Ibu Ni Komang Wardani</p>
+  <!-- section about start -->
+  <section class="about" id="about">
+    <div class="row">
+      <div class="content">
+        <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
+        <h3 data-aos="fade-up">Gede Ajip Pratama</h3>
+        <p data-aos="fade-up" data-aos-delay="300">Putra Pertama dari pasangan <br> Bapak I Ketut Martana dan Ibu Ni
+          Komang Wardani</p>
+      </div>
+      <div class="about-img" data-aos="zoom-in-up">
+        <img src="images/tuta.png" alt="about" />
+        <!-- <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay"> -->
+      </div>
     </div>
-    <div class="about-img" data-aos="zoom-in-up">
-      <img src="images/ajip.png" alt="about" />
-      <!-- <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay"> -->
-    </div>
-  </div>
-</section>
-<!-- section about end -->
+  </section>
+  <!-- section about end -->
 
- <!-- section about start -->
- <section class="about" id="about">
-  <div class="row">
-    <div class="content">
-      <h4 data-aos="fade-up">MEMPELAI PRIA</h4>
-      <h3 data-aos="fade-up">Gede Ajip Pratama</h3>
-      <p data-aos="fade-up" data-aos-delay="300">Putra Pertama dari pasangan <br> Bapak I Ketut Martana dan Ibu Ni Komang Wardani</p>
-    </div>
-    <div class="about-img" data-aos="zoom-in-up">
-      <img src="images/tuta.png" alt="about" />
-      <!-- <img class="overlay-img" src="images/overlay/overlay.jpg" alt="overlay"> -->
-    </div>
-  </div>
-</section>
-<!-- section about end -->
-
-<!-- section about2 start -->
-<!-- <section class="about2" id="about2">
+  <!-- section about2 start -->
+  <!-- <section class="about2" id="about2">
   <div class="row">
     <div class="content">
       <h4 data-aos="fade-up">MEMPELAI WANITA</h4>
@@ -197,40 +209,74 @@
 
   </div>
 </section> -->
-<!-- section about2 end -->
+  <!-- section about2 end -->
 
-<!-- Wedding Event Section Start -->
-<section class="wedding-event">
-  <h1 class="event-title1">Acara & Lokasi</h1>
-  <div class="container">
-    
-    <div class="event-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-      <div class="event-details">
-        <div class="event-info">
-          <h2 class="event-title2">Resepsi Pernikahan</h2>
-          <div class="icon-circle">
-            <i class="far fa-calendar"></i>
+
+  <!-- Wedding Event Section Start -->
+  <section class="wedding-event">
+    <h1 class="event-title1">Acara & Lokasi</h1>
+    <div class="container">
+
+      <div class="event-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="event-details">
+          <div class="event-info">
+            <h2 class="event-title2">Resepsi Pernikahan</h2>
+            <div class="icon-circle">
+              <i class="far fa-calendar"></i>
+            </div>
+            <p><strong>Rabu, 26 Juli 2023</strong></p>
           </div>
-          <p><strong>Rabu, 26 Juli 2023</strong></p>
-        </div>
-        <div class="event-info">
-          <div class="icon-circle">
-            <i class="far fa-clock"></i>
+          <div class="event-info">
+            <div class="icon-circle">
+              <i class="far fa-clock"></i>
+            </div>
+            <p><strong>13.00 WITA s/d Selesai</strong></p>
           </div>
-          <p><strong>13.00 WITA s/d Selesai</strong></p>
-        </div>
-        <div class="event-info">
-          <div class="icon-circle">
-            <i class="far fa-map"></i>
+          <div class="event-info">
+            <div class="icon-circle">
+              <i class="far fa-map"></i>
+            </div>
+            <p><strong> Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</strong></p>
           </div>
-          <p><strong> Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</strong></p>
         </div>
+        <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="event-map">Lihat di Google Maps</a>
       </div>
-      <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="event-map">Lihat di Google Maps</a>
     </div>
-  </div>
-</section>
-<!-- Wedding Event Section End -->
+  </section>
+  <!-- Wedding Event Section End -->
+
+  <!-- Wedding Event Section Start -->
+  <section class="wedding-event">
+    <!-- <h1 class="event-title1">Acara & Lokasi</h1> -->
+    <div class="container">
+
+      <div class="event-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+        <div class="event-details">
+          <div class="event-info">
+            <h2 class="event-title2">Resepsi Pernikahan</h2>
+            <div class="icon-circle">
+              <i class="far fa-calendar"></i>
+            </div>
+            <p><strong>Rabu, 26 Juli 2023</strong></p>
+          </div>
+          <div class="event-info">
+            <div class="icon-circle">
+              <i class="far fa-clock"></i>
+            </div>
+            <p><strong>13.00 WITA s/d Selesai</strong></p>
+          </div>
+          <div class="event-info">
+            <div class="icon-circle">
+              <i class="far fa-map"></i>
+            </div>
+            <p><strong> Kp. Cisaru Kulon, RT/RW 002/008, Kelurahan Rancagoong, Kec Cilaku</strong></p>
+          </div>
+        </div>
+        <a href="https://goo.gl/maps/L2jcuRbeP6z76h6m7" target="_blank" class="event-map">Lihat di Google Maps</a>
+      </div>
+    </div>
+  </section>
+  <!-- Wedding Event Section End -->
 
 
 
@@ -238,126 +284,129 @@
 
 
 
-<!-- section Story start -->
-<section class="story" id="story">
-  <div class="story-header">
-    <h3>Ajip & Tuta</h3>
-    <h2>Tentang Kami</h2>
-  </div>
+  <!-- section Story start -->
+  <section class="story" id="story">
+    <div class="story-header">
+      <h3>Ajip & Tuta</h3>
+      <h2>Tentang Kami</h2>
+    </div>
 
-  <!-- Video Embed -->
-  <!-- <div class="video-section">
+    <!-- Video Embed -->
+    <!-- <div class="video-section">
     <video controls>
       <source src="video/vidprawedresize.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div> -->
-<!-- Start video section -->
-<div class="video-section">
-  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-    <iframe 
-      src="https://www.youtube.com/embed/BydCTVgaDC8" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen 
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-    </iframe>
-  </div>
-</div>
-<!-- End video section -->
-  <!-- Story Toggle Section -->
-  <div class="story-toggle">
-    <div class="toggle-item">
-      <div class="toggle-title" data-toggle="1">
-        Tumbuhnya Rasa Suka
-        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
-      </div>
-      <div class="toggle-content" data-content="1">
-        <p>Tahun 2014, dimana tahun kita menjalani hubungan tepatnya di tanggal 14 Agustus 2014 Utsman mengungkapkan perasannya secara langsung kepada Yani.</p>
+    <!-- Start video section -->
+    <div class="video-section">
+      <div
+        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/BydCTVgaDC8" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
       </div>
     </div>
-
-    <div class="toggle-item">
-      <div class="toggle-title" data-toggle="2">
-        Waktu yang Berjalan
-        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
+    <!-- End video section -->
+    <!-- Story Toggle Section -->
+    <div class="story-toggle">
+      <div class="toggle-item">
+        <div class="toggle-title" data-toggle="1">
+          Tumbuhnya Rasa Suka
+          <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
+        </div>
+        <div class="toggle-content" data-content="1">
+          <p>Tahun 2014, dimana tahun kita menjalani hubungan tepatnya di tanggal 14 Agustus 2014 Utsman mengungkapkan
+            perasannya secara langsung kepada Yani.</p>
+        </div>
       </div>
-      <div class="toggle-content" data-content="2">
-        <p>Kita memutuskan untuk benar-benar serius untuk ke jenjang selanjutnya. Dan akhirnya, pada tanggal 27 Feburari tahun 2021 kita melangsungkan pertunangan.</p>
+
+      <div class="toggle-item">
+        <div class="toggle-title" data-toggle="2">
+          Waktu yang Berjalan
+          <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
+        </div>
+        <div class="toggle-content" data-content="2">
+          <p>Kita memutuskan untuk benar-benar serius untuk ke jenjang selanjutnya. Dan akhirnya, pada tanggal 27
+            Feburari tahun 2021 kita melangsungkan pertunangan.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="toggle-item">
-      <div class="toggle-title" data-toggle="3">
-        Takdir yang Luar Biasa
-        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
-      </div>
-      <div class="toggle-content" data-content="3">
-        <p>Di tahun 2023, kami memutuskan untuk melanjutkan perjalanan hidup bersama dengan mengikat janji pernikahan yang suci.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- section Story end -->
-
-
-<!-- Start Gallery Section -->
-<div class="bg-gallery">
-  <section class="gallery" id="gallery">
-    <h2 data-aos="fade-right">Gallery Our Moment</h2>
-
-    <div class="container">
-      <div class="img-gallery">
-        <a href="images/gallery/1.JPG" data-lightbox="models" data-title="Caption1">
-          <img src="images/gallery/1.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/2.JPG" data-lightbox="models" data-title="Caption2">
-          <img src="images/gallery/2.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/3.JPG" data-lightbox="models" data-title="Caption3">
-          <img src="images/gallery/3.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/4.JPG" data-lightbox="models" data-title="Caption4">
-          <img src="images/gallery/4.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/9.JPG" data-lightbox="models" data-title="Caption5">
-          <img src="images/gallery/9.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/10.JPG" data-lightbox="models" data-title="Caption6">
-          <img src="images/gallery/10.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/11.JPG" data-lightbox="models" data-title="Caption7">
-          <img src="images/gallery/11.JPG" alt="" class="img">
-        </a>
-        <a href="images/gallery/bts-map-of-the-soul-persona-uhdpaper.com-4K-75.jpg" data-lightbox="models" data-title="Caption8">
-          <img src="images/gallery/bts-map-of-the-soul-persona-uhdpaper.com-4K-75.jpg" alt="" class="img">
-        </a>
+      <div class="toggle-item">
+        <div class="toggle-title" data-toggle="3">
+          Takdir yang Luar Biasa
+          <span class="toggle-icon"><i class="fas fa-caret-right"></i></span> <!-- Ikon segitiga ke kanan -->
+        </div>
+        <div class="toggle-content" data-content="3">
+          <p>Di tahun 2023, kami memutuskan untuk melanjutkan perjalanan hidup bersama dengan mengikat janji pernikahan
+            yang suci.</p>
+        </div>
       </div>
     </div>
   </section>
-</div>
-<!-- End Gallery Section -->
-
-<!-- Include Lightbox CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-
-<!-- Include Lightbox JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- section Story end -->
 
 
-    
+  <!-- Start Gallery Section -->
+  <div class="bg-gallery">
+    <section class="gallery" id="gallery">
+      <h3 data-aos="fade-right">OUR STORY</h3>
+      <h2 data-aos="fade-right">Gallery</h2>
+      <div class="container">
+        <div class="img-gallery">
+          <a href="images/gallery/1.JPG" data-lightbox="models" data-title="Caption1">
+            <img src="images/gallery/1.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/2.JPG" data-lightbox="models" data-title="Caption2">
+            <img src="images/gallery/2.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/3.JPG" data-lightbox="models" data-title="Caption3">
+            <img src="images/gallery/3.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/4.JPG" data-lightbox="models" data-title="Caption4">
+            <img src="images/gallery/4.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/9.JPG" data-lightbox="models" data-title="Caption5">
+            <img src="images/gallery/9.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/10.JPG" data-lightbox="models" data-title="Caption6">
+            <img src="images/gallery/10.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/11.JPG" data-lightbox="models"
+            data-title="Caption7">
+            <img src="images/gallery/11.JPG" alt="" class="img">
+          </a>
+          <a href="images/gallery/12.JPG" data-lightbox="models"
+            data-title="Caption8">
+            <img src="images/gallery/12.JPG" alt="" class="img">
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End Gallery Section -->
+
+  <!-- Include Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Include Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 
-    <!-- Start video section -->
-    <!-- <div class="video-section">
+
+
+
+  <!-- Start video section -->
+  <!-- <div class="video-section">
       <video controls>
         <source src="video/vid1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div> -->
-    <!-- end video section -->
-    <!-- Start Wedding gift -->
-    <!-- <section class="gift" id="gift">
+  <!-- end video section -->
+  <!-- Start Wedding gift -->
+  <!-- <section class="gift" id="gift">
       <h2 data-aos="fade-down" >Wedding Gift</h2>
       <p data-aos="fade-up" data-aos-delay="0">Bagi bapak/ibu/saudara/i yang ingin mengirimkan hadiah pernikahan dapat melalui virtual account atau e-wallet di bawah ini:</p>
       <div class="buttom" data-aos="fade-up" >
@@ -379,202 +428,209 @@
     
       </div>
     </section> -->
-    <!-- End Wedding gift -->
+  <!-- End Wedding gift -->
 
- <!-- Start RSVP -->
-<section class="rsvp">
-  <h1 class="rsvp-title1">Buku Tamu</h1>
-  <div class="row">
-    <div class="message" data-aos="fade-down">
-      <!-- Title Section -->
-      <h2 class="rsvp-title">UCAPAN DAN DOA</h2>
-      
-      <!-- Comment Form -->
-      <form id="formMessage">
-        <div class="input-group">
-          <label for="nama">Nama:</label>
-          <input type="text" name="nama" placeholder="Nama" required>
-        </div>
-        <div class="input-group">
-          <label for="kehadiran">Kehadiran:</label>
-          <select name="kehadiran" id="kehadiran" required>
-            <option value="">Pilih Kehadiran</option>
-            <option value="Hadir">Hadir</option>
-            <option value="Akan Hadir">Akan Hadir</option>
-            <option value="Tidak Hadir">Tidak Hadir</option>
-          </select>
-        </div>
-        <div class="input-group">
-          <label for="pesan">Pesan:</label>
-          <textarea cols="30" rows="5" name="pesan" placeholder="Berikan Ucapan & Doa Terbaik Untuk kedua Mempelai" required></textarea>
-        </div>
-        <button type="submit" class="btn">Kirim ucapan <i data-feather="arrow-right" style="vertical-align: middle"></i></button>
-      </form>
-      
-      <!-- <div class="profile-icon">
+  <!-- Start RSVP -->
+  <section class="rsvp">
+    <h1 class="rsvp-title1">Buku Tamu</h1>
+    <div class="row">
+      <div class="message" data-aos="fade-down">
+        <!-- Title Section -->
+        <h2 class="rsvp-title">UCAPAN DAN DOA</h2>
+
+        <!-- Comment Form -->
+        <form id="formMessage">
+          <div class="input-group">
+            <label for="nama">Nama:</label>
+            <input type="text" name="nama" placeholder="Nama" required>
+          </div>
+          <div class="input-group">
+            <label for="kehadiran">Kehadiran:</label>
+            <select name="kehadiran" id="kehadiran" required>
+              <option value="">Pilih Kehadiran</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Akan Hadir">Akan Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="pesan">Pesan:</label>
+            <textarea cols="30" rows="5" name="pesan" placeholder="Berikan Ucapan & Doa Terbaik Untuk kedua Mempelai"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn">Kirim ucapan <i data-feather="arrow-right"
+              style="vertical-align: middle"></i></button>
+        </form>
+
+        <!-- <div class="profile-icon">
         <i data-feather="user"></i> 
       </div> -->
 
-      <!-- Comments Section -->
-      <div class="container-card" data-aos="fade-up">
-        <div class="card-message">
-          <div id="messages-container" class="bubble-container"></div>
+        <!-- Comments Section -->
+        <div class="container-card" data-aos="fade-up">
+          <div class="card-message">
+            <div id="messages-container" class="bubble-container"></div>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
-  </div>
-</section>
-<!-- End RSVP -->
+  </section>
+  <!-- End RSVP -->
 
 
 
 
-    <!-- new rsvp start -->
-     
-    <!-- new rsvp End -->
+  <!-- new rsvp start -->
 
-    <!-- Start Doa -->
-    <section class="doa" id="home">
-  
-      <div class="content">
-        <h1 >TerimaKasih</h1>
-        <h4>Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan memberikan do’a restu kepada kami.</h4>
-        <h4 style="margin-top: 8rem;" >KAMI YANG BERBAHAGIA</h4>
-        <h3 >Ajip <span>&</span> Tu Ita</h3>
-      </div>
-    </section> 
-    <!-- End Doa -->
+  <!-- new rsvp End -->
 
-    <!-- start footer -->
-    <footer>
-      <div class="logo" >
-        <img src="images/logo.png" alt="logo">
-        <!-- <a href="#" style="vertical-align: middle">Masreyxlvi.com</a> -->
-      </div>
-      <div class="socials" >
-        <a href="" class="wa"  >
-          WA : 0855 3655 3592 
-        </a>
-        <a href="" class="ig"  >| IG : @nked.s</a>
-      </div>
-      <div class="credit" >
-        <p>Copyright &copy; 2024</p>
-        <!-- <h5>HUBUNGI KAMI</h5> -->
-      </div>
-    </footer>
-    <!-- end footer -->
+  <!-- Start Doa -->
+  <section class="doa" id="home">
 
-    <!-- father icons -->  
-    <script>
-      feather.replace();
-    </script>
-    <!-- jquery -->
-    <script src="js/jquery.js"></script>
-    <!-- arctext -->
-    <script src="js/script.js"></script>
-    <!-- Lihgtbox js -->
-    <script src="js/lightbox-plus-jquery.js"></script>
-    <!-- Message Strorage -->
-    <!-- <script src="js/strorage.js"></script> -->
-    <script type="module" src="js/strorage.js"></script>
+    <div class="content">
+      <h1 data-aos="fade-down">TerimaKasih</h1>
+      <h4 data-aos="fade-down">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i, berkenan hadir dan
+        memberikan do’a restu kepada kami.</h4>
+      <h4 style="margin-top: 8rem;" data-aos="fade-down">KAMI YANG BERBAHAGIA</h4>
+      <h3 data-aos="fade-down">Ajip <span>&</span> Puspita</h3>
+    </div>
+  </section>
+  <!-- End Doa -->
 
-    <!-- toastr -->
-    <script src="assets/toastr/toastr.min.js"></script>
-    <!-- Aos -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- arctext -->
-    <script src="assets/Arctext/js/jquery.arctext.js"></script>
-    <!-- sweetalert -->
-    <script src="assets/sweetalert2/sweetalert2.all.min.js"></script>
-    <script>
-       
-        const gallery = document.querySelectorAll('.img');
+  <!-- start footer -->
+  <footer>
+    <div class="logo">
+      <img src="images/logo.png" alt="logo">
+    </div>
 
-        gallery.forEach((img, i) => {
-            img.dataset.aos = 'fade-down';
-            img.dataset.aosDelay = i * 100;
-        });
-        AOS.init({
-          duration: 1500,
-          once: true
-        });
-      </script>
-     <script>
-      // Function to get URL parameters
-      function getUrlParameter(name) {
-        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-        var results = regex.exec(location.search);
-        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-      }
-    
-      // Get the guest name from the URL parameter
-      const guestName = getUrlParameter('u');
-    
-      // Display the guest name if it exists
-      if (guestName) {
-        document.getElementById('guestName').textContent = `Dear ${guestName}`;
-      }
-    </script>
+    <div class="socials">
+      <a href="" class="wa">WA : 0855 3655 3592</a>
+      <a href="" class="ig">| IG : @nked.s</a>
+    </div>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-<script>
-  feather.replace(); // Replace the <i> tags with icons
-</script>
+    <div class="photographer">
+      <p>Photographer: <a href="https://instagram.com/yourphotographer" target="_blank">YourPhotographerName</a></p>
+    </div>
 
-<script>
-  document.querySelectorAll('.toggle-title').forEach((title) => {
-    title.addEventListener('click', function () {
-      const content = this.nextElementSibling;
-      const isActive = this.parentElement.classList.contains('active');
-      const icon = this.querySelector('.toggle-icon');
-      
-      // Toggle the clicked one
-      if (isActive) {
-        // If it's already active, close it
-        this.parentElement.classList.remove('active');
-        content.style.display = 'none';
-        icon.innerHTML = '<i class="fas fa-caret-right"></i>'; // Ikon ke kanan
-      } else {
-        // If it's not active, open it
-        this.parentElement.classList.add('active');
-        content.style.display = 'block';
-        icon.innerHTML = '<i class="fas fa-caret-down"></i>'; // Ikon ke bawah
-      }
+    <div class="credit">
+      <p>Copyright &copy; 2024</p>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+
+  <!-- father icons -->
+  <script>
+    feather.replace();
+  </script>
+  <!-- jquery -->
+  <script src="js/jquery.js"></script>
+  <!-- arctext -->
+  <script src="js/script.js"></script>
+  <!-- Lihgtbox js -->
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <!-- Message Strorage -->
+  <!-- <script src="js/strorage.js"></script> -->
+  <script type="module" src="js/strorage.js"></script>
+
+  <!-- toastr -->
+  <script src="assets/toastr/toastr.min.js"></script>
+  <!-- Aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- arctext -->
+  <script src="assets/Arctext/js/jquery.arctext.js"></script>
+  <!-- sweetalert -->
+  <script src="assets/sweetalert2/sweetalert2.all.min.js"></script>
+  <script>
+
+    const gallery = document.querySelectorAll('.img');
+
+    gallery.forEach((img, i) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = i * 100;
     });
-  });
-</script>
+    AOS.init({
+      duration: 1500,
+      once: true
+    });
+  </script>
+  <script>
+    // Function to get URL parameters
+    function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  // Menampilkan popup segera setelah halaman dimuat
-  const popup = document.getElementById("myPopup");
-  popup.style.display = "block";
+    // Get the guest name from the URL parameter
+    const guestName = getUrlParameter('u');
 
-  // Menambahkan event untuk menutup popup ketika tombol ditekan
-  const closeButton = document.querySelector(".close");
-  closeButton.addEventListener("click", function() {
-    popup.style.display = "none";
-  });
-});
+    // Display the guest name if it exists
+    if (guestName) {
+      document.getElementById('guestName').textContent = `Dear ${guestName}`;
+    }
+  </script>
 
-closeButton.addEventListener("click", function() {
-  popup.style.display = "none";
-  document.body.classList.add("popup-closed");
-});
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace(); // Replace the <i> tags with icons
+  </script>
+
+  <script>
+    document.querySelectorAll('.toggle-title').forEach((title) => {
+      title.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        const isActive = this.parentElement.classList.contains('active');
+        const icon = this.querySelector('.toggle-icon');
+
+        // Toggle the clicked one
+        if (isActive) {
+          // If it's already active, close it
+          this.parentElement.classList.remove('active');
+          content.style.display = 'none';
+          icon.innerHTML = '<i class="fas fa-caret-right"></i>'; // Ikon ke kanan
+        } else {
+          // If it's not active, open it
+          this.parentElement.classList.add('active');
+          content.style.display = 'block';
+          icon.innerHTML = '<i class="fas fa-caret-down"></i>'; // Ikon ke bawah
+        }
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Menampilkan popup segera setelah halaman dimuat
+      const popup = document.getElementById("myPopup");
+      popup.style.display = "block";
+
+      // Menambahkan event untuk menutup popup ketika tombol ditekan
+      const closeButton = document.querySelector(".close");
+      closeButton.addEventListener("click", function () {
+        popup.style.display = "none";
+      });
+    });
+
+    closeButton.addEventListener("click", function () {
+      popup.style.display = "none";
+      document.body.classList.add("popup-closed");
+    });
 
 
-</script>
+  </script>
 
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+</body>
+
 </html>
