@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Explora&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* My FONTS */
 @font-face {
   font-family: analogue;
@@ -23,6 +23,7 @@
   --explora: "Explora", cursive;
   --poppins: "Poppins", sans-serif;
   --prata: "Prata", sans-serif;
+  --roboto: "Roboto", sans-serif;
 
   /* COLORS */
   --dark-100: #3a4f47;
@@ -61,7 +62,7 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(../images/popup.JPG);
+  background-image: url(../images/gallery/2.JPG);
   background-size: cover;
   background-position: center; /* Latar belakang transparan */
   min-height: 100vh;
@@ -107,32 +108,33 @@ body {
 }
 
 .popup-content .example2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--bg);
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
   font-weight: normal;
   margin-bottom: 2rem;
-  font-style: italic; /* Menambahkan properti untuk teks miring */
+  font-family: georgia, sans-serif;
   
 }
 
 .popup-content .example3 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--bg);
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
   font-weight: normal;
   margin-bottom: 2rem;
   font-style: italic; /* Menambahkan properti untuk teks miring */
-  font-family: analogue, Sans-Serif;
+  font-family: "Georgia", Sans-Serif;
 }
 
 .popup-content .example4 {
   font-size: 1rem;
   color: var(--bg);
-  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   font-weight: normal;
   margin-bottom: 1rem;
   letter-spacing: 0.6em; /* Sesuaikan nilai ini sesuai keinginan Anda */
+  font-family: Georgia, sans-serif;
 }
 
 .popup-content .example5 {
@@ -141,6 +143,7 @@ body {
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
   font-weight: normal;
   margin-bottom: 2rem;
+  font-family: roboto,
 
 }
 
@@ -149,9 +152,9 @@ body {
   /* font-weight: 700; */
   font-weight: normal;
   color: var(--bg);
-  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   /* text-transform: uppercase; */
-  font-family: analogue, Sans-Serif;
+  font-family: "prata", Sans-Serif;
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
@@ -275,7 +278,8 @@ body {
   /* text-transform: uppercase; */
   margin: 2rem 0;
   font-weight: normal;
-  letter-spacing: 10px;
+  letter-spacing: 8px;
+  font-family: karla, sans-serif;
 }
 .hero .content h4 span {
   font-style: italic;
@@ -315,11 +319,11 @@ body {
 /* end of garis sebelah pawiwahan */
 
 .hero .content h1 {
-  font-size: 4em;
+  font-size: 3em;
   color: var(--bg);
-  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   text-transform: uppercase;
-  font-family: analogue, sans-serif;
+  font-family: "prata", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -349,7 +353,7 @@ body {
   margin: 1rem 1.7rem;
   font-size: 2rem;
   color: var(--bg);
-  font-family: "Poppins", Sans-serif;
+  font-family: "Prata", Sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
 }
@@ -361,9 +365,10 @@ body {
 /* quran */
 .quran {
   position: relative;
-  background: #ffffff; /* Atur warna latar belakang jika diperlukan */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(29, 0, 3, 1));
   padding: 2rem 7% 1.4rem;
   /* background: linear-gradient(to bottom, #f0f0f0, #fff); Gradien dari warna terang ke putih */
+  min-height: 600px; /* Menetapkan tinggi minimum untuk memperpanjang section */
 }
 
 .quran .row {
@@ -372,7 +377,7 @@ body {
 .quran .row .quran-img {
   flex: 1 1 45rem;
   width:5%;
-  padding: 0 0 5rem;
+  padding: 0 0 1rem;
 }
 
 .quran .row .quran-img img {
@@ -384,10 +389,10 @@ body {
   padding: 5rem 2rem;
 }
 .quran .row .content h3 {
-  font-family: "Crete Round", Sans-serif;
+  font-family: "Prata", Sans-serif;
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1em;
@@ -399,8 +404,8 @@ body {
   margin-bottom: 0.8rem;
   font-weight: normal;
   font-style: italic;
-  color: #AE9250;
-  font-family: "Dosis", Sans-serif;
+  color: #ffffff;
+  font-family: Georgia, Sans-serif;
   line-height: 1.7em;
 }
 /* about */
@@ -467,7 +472,7 @@ body {
 .about .row .content p {
   font-size: 1rem;
   margin: 0;
-  font-family: var(--poppins);
+  font-family: Georgia, sans-serif;
   font-weight: normal;
   color: #9b9b9b;
 }
@@ -575,17 +580,18 @@ body {
 
 .story-header h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: italic;
   color: #c1c1c1;
+  font-family: "prata", sans-serif;
 }
 
 .story-header h2 {
   text-align: center;
   font-size: 3rem;
-  font-family: 'power';
-  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+  font-weight: 600;
   margin-top: 0.5rem;
   color: #ffffff;
 }
@@ -622,6 +628,8 @@ body {
   align-items: center;
   border-radius: 8px;
   transition: background-color 0.3s;
+  font-family: Georgia, sans-serif;
+  font-weight: 400;
 }
 
 .toggle-title:hover {
@@ -631,7 +639,7 @@ body {
 .toggle-content {
   display: none;
   padding: 1rem;
-  background-color: #1d1d1d;
+  background-color: #AE9250;
   border-radius: 8px;
   margin-top: 0.5rem;
   color: #ffffff;
@@ -692,19 +700,20 @@ body {
 }
 .event-title1 {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   color: white;
   margin-bottom: 2rem;
-  font-family: var(--explora);
+  font-family: "Prata", sans-serif;
+  letter-spacing: 0.5rem;
 }
 .event-title2 {
   text-align: center;
-  font-size: 4.5rem;
-  font-weight: 1000;
-  color: black;
-  text-shadow: 1px 1px 3px rgba(244, 237, 165, 0.8);
-  margin-bottom: 2rem;
-  font-family: var(--explora);
+  font-size: 3rem;
+  font-weight: 200;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 3rem;
+  font-family: Georgia, sans-serif;
 }
 
 .event-card {
@@ -747,6 +756,7 @@ body {
 .event-info p {
   font-size: 1.5rem;
   color: #333;
+  font-family: "karla", sans-serif;
 }
 
 .event-map {
@@ -758,6 +768,7 @@ body {
   font-size: 1.5rem;
   transition: background-color 0.3s;
   text-decoration: none;
+  font-family: "karla", sans-serif;
 }
 
 .event-map:hover {
@@ -774,21 +785,22 @@ body {
 .gallery h2 {
   font-size: 4rem;
   color: white;
-  font-family: var(--prata);
+  font-family: Georgia, sans-serif;
   font-weight: 200;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+  /* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); */
   margin-bottom: 2rem;
   text-align: center;
+  letter-spacing: 1rem;
 }
 
 .gallery h3 {
   font-size: 1rem;
   color: white;
-  font-family: var(--poppins);
-  font-weight: 800;
-  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
-  
+  font-family: "Prata", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1rem;
   text-align: center;
+  letter-spacing: 0.5rem;
 }
 
 /* .gallery h2::after {
@@ -972,21 +984,24 @@ body {
 
 .rsvp .rsvp-title {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
-  font-weight: bold;
+  font-weight: 900;
   color: #333;
+  font-family: "karla", sans-serif;
 }
 .rsvp-title1 {
   text-align: center;
-  font-size: 5.5rem;
+  font-size: 3rem;
   color: white;
-  padding-top: 2rem;
-  font-family: var(--explora);
+  padding: 4rem 0 2%;
+  font-family: "Prata", sans-serif;
+  letter-spacing: 0.4rem;
 }
 
 .rsvp .input-group {
   margin-bottom: 1rem;
+  font-family: Georgia, sans-serif;
 }
 
 .rsvp .input-group input, 
@@ -1135,34 +1150,34 @@ body {
 
 .doa .content h1 {
   font-size: 4em;
-  font-weight: 700;
-  font-family: var(--explora);
+  font-weight: 400;
+  font-family: "Prata", sans-serif;
   color: var(--bg);
-  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
-  font-weight: bold;
-  font-style: italic;
-  text-transform: uppercase;
+  /* text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8); */
 }
-.doa .content h4 {
+.doa .content h2 {
   font-size: 1.5em;
   color: var(--bg);
-  text-transform: uppercase;
   margin-top: 3rem;
-  font-weight: 600;
-  text-shadow: 0.5px 0.5px 2.5px rgba(58, 79, 71, 0.8);
+  font-weight: 200;
+  /* text-shadow: 0.5px 0.5px 2.5px rgba(58, 79, 71, 0.8); */
   max-width: 50rem;
+  font-family: Georgia, sans-serif;
+  letter-spacing: 0.3rem;
+  padding: 3rem;
 }
 .doa .content h3 {
   font-size: 3em;
   margin-top: 2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--bg);
-  text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
+  /* text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8); */
   text-transform: uppercase;
-  font-family: analogue;
+  font-family: "Prata", sans-serif;
+  letter-spacing: 0.3rem;
 }
 .doa .content h3 span {
-  color: var(--warning);
+  color: #AE9250;
 }
 
 /* footer */
@@ -1174,6 +1189,7 @@ footer {
   padding: 2rem;
   background-color: #1d0003;
   color: white; /* Set the default text color to white */
+  font-family: "Karla", sans-serif;
 }
 
 footer .logo img {
@@ -1324,7 +1340,7 @@ footer .credit {
   .quran .row .quran-img {
     flex: 1 1 45rem;
     width:20%;
-    padding: 0 0 5rem;
+    padding: 0 0 1rem;
   }
 
   .quran .row .quran-img img {
@@ -1339,10 +1355,10 @@ footer .credit {
   }
 
   .quran .row .content h3 {
-    font-family: "Crete Round", Sans-serif;
-    font-size: 2rem;
+    font-family: "Prata", Sans-serif;
+    font-size: 1rem;
     margin-bottom: 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 1em;
@@ -1355,8 +1371,8 @@ footer .credit {
     margin-bottom: 0.8rem;
     font-weight: normal;
     font-style: italic;
-    color: #AE9250;
-    font-family: "Dosis", Sans-serif;
+    color: #ffffff;
+    font-family: Georgia, Sans-serif;
     line-height: 1.7em;
   }
   .about {
