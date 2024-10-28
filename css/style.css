@@ -678,6 +678,8 @@ body {
   background: url("../images/bg-event.jpg") no-repeat center center/cover;
   padding: 5rem 0;
   position: relative;
+  background-size: 170%; /* Menambah skala pada background */
+  background-color: #000000;
 }
 
 .wedding-event::before {
@@ -772,7 +774,7 @@ body {
 }
 
 .event-map:hover {
-  background-color: darkorange;
+  background-color: #4a3c1a;
 }
 
 
