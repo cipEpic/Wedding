@@ -62,7 +62,7 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(../images/gallery/2.JPG);
+  background-image: url(../images/popup.jpg);
   background-size: cover;
   background-position: center; /* Latar belakang transparan */
   min-height: 100vh;
@@ -779,58 +779,58 @@ body {
 
 
 
-/* Gallery */
-.gallery {
-  padding: 7rem 7% 1.4rem;
-  background-color: #1d0003;
-}
-.gallery h2 {
-  font-size: 4rem;
-  color: white;
-  font-family: Georgia, sans-serif;
-  font-weight: 200;
-  /* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); */
-  margin-bottom: 2rem;
-  text-align: center;
-  letter-spacing: 1rem;
-}
+  /* Gallery */
+  .gallery {
+    padding: 7rem 7% 1.4rem;
+    background-color: #1d0003;
+  }
+  .gallery h2 {
+    font-size: 4rem;
+    color: white;
+    font-family: Georgia, sans-serif;
+    font-weight: 200;
+    /* text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5); */
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 1rem;
+  }
 
-.gallery h3 {
-  font-size: 1rem;
-  color: white;
-  font-family: "Prata", sans-serif;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  text-align: center;
-  letter-spacing: 0.5rem;
-}
+  .gallery h3 {
+    font-size: 1rem;
+    color: white;
+    font-family: "Prata", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+  }
 
-/* .gallery h2::after {
-  content: "";
-  display: block;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.1rem solid var(--dark-100);
-  width: 50%;
-} */
+  /* .gallery h2::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--dark-100);
+    width: 50%;
+  } */
 
-.gallery .container .img-gallery {
-  display: grid;
-  grid-gap: 2rem;
+  .gallery .container .img-gallery {
+    display: grid;
+    grid-gap: 2rem;
 
-  grid-template-columns: repeat(4, 1fr);
-}
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-.gallery .container .img-gallery img {
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 2/3;
-  border-radius: 5px;
-  border: 0.2px transparent var(--dark-75);
-}
-.gallery .container .img-gallery img:hover {
-  transform: scale(1.1);
-  filter: brightness(35%);
-}
+  .gallery .container .img-gallery img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+    border-radius: 5px;
+    border: 0.2px transparent var(--dark-75);
+  }
+  .gallery .container .img-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(35%);
+  }
 
 /* Gift */
 .gift {
@@ -1124,7 +1124,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(../images/popup.JPG);
+  background-image: url(../images/thx.JPG);
   background-size: cover;
   background-position: center;
   position: relative;
