@@ -62,7 +62,7 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
-  background-image: url(../images/popup.jpg);
+  background-image: url(../images/popup.JPG);
   background-size: cover;
   background-position: center; /* Latar belakang transparan */
   min-height: 100vh;
