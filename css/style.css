@@ -423,11 +423,13 @@ body {
 }
 
 .about .row .about-img {
-  position: relative;
-  flex: 1 1 45rem;
   display: flex;
   justify-content: center;
-  margin: 0 1rem;
+  align-items: center;
+  margin: 0; /* Pastikan margin diatur ke 0 */
+  padding: 0; /* Pastikan padding diatur ke 0 */
+  width: 100%; /* Membuat elemen mengambil lebar penuh */
+  text-align: center;
 }
 
 .about .row .about-img img {
