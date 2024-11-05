@@ -1592,6 +1592,18 @@ footer .credit {
     aspect-ratio: auto; /* Allow images to maintain their natural aspect ratio */
   }
 
+  /* Target the specific "wide" class to make it span 2 columns */
+.gallery .container .img-gallery .wide {
+  grid-column: span 2; /* Make the 23rd image span 2 columns */
+}
+
+.gallery .container .img-gallery .wide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+  
+
   /* gift */
   .gift .card-container {
     flex-wrap: wrap;
@@ -1776,6 +1788,17 @@ footer .credit {
   .gallery .container .img-gallery {
     grid-template-columns: repeat(2, 1fr); /* Still 2 images per row */
   }
+  /* Target the specific "wide" class to make it span 2 columns */
+.gallery .container .img-gallery .wide {
+  grid-column: span 2; /* Make the 23rd image span 2 columns */
+}
+
+.gallery .container .img-gallery .wide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 }
 
 
