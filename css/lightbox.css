@@ -204,32 +204,19 @@ body.lb-disable-scrolling {
 }
 
 /* CSS tambahan untuk layar kecil (<= 780px) */
-/* @media (max-width: 780px) {
+@media (max-width: 780px) {
+  /* .lb-image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+  }
+
   .lb-container {
-    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-
-  .lb-nav a.lb-prev, 
-  .lb-nav a.lb-next {
-    top: 50%; /* Tampil di tengah gambar secara vertikal */
-    transform: translateY(-50%);
-    opacity: 0.6;
-  }
-
-  .lb-nav a.lb-prev {
-    left: 5px;
-  }
-
-  .lb-nav a.lb-next {
-    right: 5px;
-  }
-
-  .lb-data .lb-close {
-    top: 5px;
-    right: 5px;
-  }
-} */
-
+    align-items: center;
+    height: 90vh; /* Kontainer mengambil tinggi penuh layar */
+  } */
+}
