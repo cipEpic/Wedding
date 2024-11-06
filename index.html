@@ -642,6 +642,25 @@
 
   </script>
 
+<script>
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'disableScrolling' : true,
+    'fitImagesInViewport' : true,
+    'alwaysShowNavOnTouchDevices' : true,
+    'positionFromTop' : 50
+  })
+
+  window.addEventListener('resize', function() {
+  if (window.innerWidth <= 780) {
+    document.querySelector('.lb-container').style.height = '90vh';
+    document.querySelector('.lb-image').style.maxHeight = '90vh';
+  }
+});
+
+</script>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

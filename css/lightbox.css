@@ -101,7 +101,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-nav a.lb-prev {
-  width: 34%;
+  width: 30%;
   left: 0;
   float: left;
   background: url(../images/prev.png) left 48% no-repeat;
@@ -202,3 +202,34 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+/* CSS tambahan untuk layar kecil (<= 780px) */
+/* @media (max-width: 780px) {
+  .lb-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lb-nav a.lb-prev, 
+  .lb-nav a.lb-next {
+    top: 50%; /* Tampil di tengah gambar secara vertikal */
+    transform: translateY(-50%);
+    opacity: 0.6;
+  }
+
+  .lb-nav a.lb-prev {
+    left: 5px;
+  }
+
+  .lb-nav a.lb-next {
+    right: 5px;
+  }
+
+  .lb-data .lb-close {
+    top: 5px;
+    right: 5px;
+  }
+} */
+

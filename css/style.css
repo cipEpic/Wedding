@@ -1273,7 +1273,7 @@ footer .credit {
   align-items: center; /* Pusatkan elemen secara horizontal */
   margin-top: auto; /* Biarkan konten di atas mengisi ruang */
   width: 100%; /* Pastikan kontainer mengambil lebar penuh */
-  padding-top: 30rem;
+  padding-top: 28rem;
 }
 
 
@@ -1753,13 +1753,14 @@ footer .credit {
 }
 
 /* For smaller screens, like 320x590 */
-@media (max-width: 360px) {
+@media (max-width: 374px) {
   .popup-content h1 {
     font-size: 2.5rem; /* Sesuaikan agar lebih kecil di layar 360px */
   }
 
   .popup-content-sub {
     padding-top: 1rem; /* Mengurangi padding atas agar tombol terlihat */
+    
   }
 
   .popup-content .close {
