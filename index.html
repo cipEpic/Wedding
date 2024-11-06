@@ -43,8 +43,6 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-
-  <!-- Firebase App (the core Firebase SDK) is always required and must be first -->
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js"></script>
   <!-- <script type="module" src="firebase-database.js"></script> -->
@@ -569,10 +567,10 @@
 
     gallery.forEach((img, i) => {
       img.dataset.aos = 'fade-down';
-      img.dataset.aosDelay = i * 100;
+      img.dataset.aosDelay = i * 50;
     });
     AOS.init({
-      duration: 1500,
+      duration: 800,
       once: true
     });
   </script>
@@ -623,6 +621,7 @@
   </script>
 
   <script>
+    const closeButton = document.querySelector(".close");
     document.addEventListener("DOMContentLoaded", function () {
       // Menampilkan popup segera setelah halaman dimuat
       const popup = document.getElementById("myPopup");

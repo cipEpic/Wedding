@@ -1252,13 +1252,13 @@ footer .credit {
     padding: 1.5rem; /* Adjust padding if necessary */
   }
   .popup-container {
-    min-height: 100vh;
     display: flex;
-    align-items: flex-start;
-    align-content: flex-end;
-    padding: 10rem 3rem;
+    align-items: center; /* Mengatur ke tengah */
+    justify-content: center; /* Mengatur ke tengah */
+    padding: 3rem 1rem; /* Mengurangi padding untuk layar kecil */
     margin: 0 auto;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: auto;
   }
 
   .popup-content {
@@ -1275,6 +1275,7 @@ footer .credit {
   width: 100%; /* Pastikan kontainer mengambil lebar penuh */
   padding-top: 30rem;
 }
+
 
 /* Hero Section */
 .hero {
@@ -1753,37 +1754,20 @@ footer .credit {
 
 /* For smaller screens, like 320x590 */
 @media (max-width: 360px) {
-  .popup-container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 2rem; /* Reduce padding to fit content */
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .popup-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Ensure vertical alignment */
+  .popup-content h1 {
+    font-size: 2.5rem; /* Sesuaikan agar lebih kecil di layar 360px */
   }
 
   .popup-content-sub {
-    padding-top: 5rem; /* Adjust padding to avoid overflow */
-    margin-top: 0;
-  }
-
-  .popup-content h1 {
-    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    padding-top: 1rem; /* Mengurangi padding atas agar tombol terlihat */
   }
 
   .popup-content .close {
-    font-size: 1rem; /* Adjust button size */
-    padding: 0.5rem 1rem; /* Adjust padding for smaller buttons */
+    font-size: 1rem; /* Perkecil ukuran tombol di layar sangat kecil */
+    padding: 0.4rem 1rem; /* Sesuaikan padding agar proporsional */
   }
 }
+
 
 /* For mobile screens (below 480px) */
 @media (max-width: 480px) {
