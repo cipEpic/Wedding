@@ -162,6 +162,10 @@ body {
   color: #AE9250;
 }
 
+body.popup-open {
+  overflow: hidden; /* Hapus scroll dari body ketika popup terbuka */
+}
+
 /* Sembunyikan konten utama saat popup aktif */
 /* #home {
   display: none;
@@ -1253,18 +1257,20 @@ footer .credit {
   }
   .popup-container {
     display: flex;
-    align-items: center; /* Mengatur ke tengah */
-    justify-content: center; /* Mengatur ke tengah */
-    padding: 3rem 1rem; /* Mengurangi padding untuk layar kecil */
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1rem; /* Kurangi padding */
     min-height: 100vh;
-    overflow: auto;
+    overflow-y: auto; /* Tambahkan overflow-y untuk mengizinkan scroll */
   }
 
   .popup-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%; /* Batasi lebar pada layar kecil */
+    padding: 1rem;
+  }
+
+  .popup-content-sub {
+    padding-top: 2rem; /* Atur ulang padding atas */
   }
 
 .popup-content-sub {
@@ -1772,3 +1778,14 @@ footer .credit {
 }
 
 
+/* Mobile */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .popup-container {
+    padding: 1rem; /* Kurangi padding lebih lanjut */
+  }
+
+}

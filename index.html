@@ -629,21 +629,25 @@
   <script>
     const closeButton = document.querySelector(".close");
     document.addEventListener("DOMContentLoaded", function () {
-      // Menampilkan popup segera setelah halaman dimuat
-      const popup = document.getElementById("myPopup");
-      popup.style.display = "block";
+  const popup = document.getElementById("myPopup");
 
-      // Menambahkan event untuk menutup popup ketika tombol ditekan
-      const closeButton = document.querySelector(".close");
-      closeButton.addEventListener("click", function () {
-        popup.style.display = "none";
-      });
-    });
+  // Tampilkan popup saat halaman dimuat
+  popup.style.display = "block";
+  document.body.classList.add("popup-open");
 
-    closeButton.addEventListener("click", function () {
-      popup.style.display = "none";
-      document.body.classList.add("popup-closed");
-    });
+  // Menutup popup saat tombol "Buka Undangan" diklik
+  closeButton.addEventListener("click", function () {
+    popup.style.display = "none";
+    document.body.classList.remove("popup-open");
+  });
+});
+
+closeButton.addEventListener("click", function (event) {
+  event.preventDefault(); // Mencegah reload atau efek tidak terduga
+  popup.style.display = "none";
+  document.body.classList.remove("popup-open");
+});
+
 
 
   </script>
