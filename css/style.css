@@ -1279,7 +1279,7 @@ footer .credit {
   align-items: center; /* Pusatkan elemen secara horizontal */
   margin-top: auto; /* Biarkan konten di atas mengisi ruang */
   width: 100%; /* Pastikan kontainer mengambil lebar penuh */
-  padding-top: 28rem;
+  /* padding-top: 28rem; */
 }
 
 
