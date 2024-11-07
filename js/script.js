@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 // Ambil elemen-elemen yang dibutuhkan
 var popup = document.getElementById("myPopup");
+popupAudio.loop = true; // Mengaktifkan looping
 var closeBtn = document.getElementsByClassName("close")[0];
 var isAudioPlaying = true;
 var logo = document.getElementById("logo");
@@ -11,6 +12,8 @@ var logo = document.getElementById("logo");
 function showPopup() {
   popup.style.display = "flex";
   document.body.style.overflow = "hidden";
+  var popupAudio = document.getElementById("popupAudio");
+  popupAudio.loop = true; // Mengaktifkan looping
   setTimeout(function () {
     popup.style.transform = "translateY(0)";
     popup.style.opacity = 1;
@@ -74,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // fitur Hitung Mundur
 // Mengatur waktu akhir perhitungan mundur
-var countDownDate = new Date("Nov 28, 2024 10:00:00").getTime();
+var countDownDate = new Date("Nov 28, 2024 11:00:00").getTime();
 
 // Memperbarui hitungan mundur setiap 1 detik
 var x = setInterval(function () {

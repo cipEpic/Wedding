@@ -1752,23 +1752,6 @@ footer .credit {
   color: #AE9250; /* Adjust the color as needed */
 }
 
-/* For smaller screens, like 320x590 */
-@media (max-width: 374px) {
-  .popup-content h1 {
-    font-size: 2.5rem; /* Sesuaikan agar lebih kecil di layar 360px */
-  }
-
-  .popup-content-sub {
-    padding-top: 1rem; /* Mengurangi padding atas agar tombol terlihat */
-    
-  }
-
-  .popup-content .close {
-    font-size: 1rem; /* Perkecil ukuran tombol di layar sangat kecil */
-    padding: 0.4rem 1rem; /* Sesuaikan padding agar proporsional */
-  }
-}
-
 
 /* For mobile screens (below 480px) */
 @media (max-width: 480px) {

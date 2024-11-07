@@ -404,3 +404,20 @@
     height: 90vh; /* Kontainer mengambil tinggi penuh layar */
   } 
 }
+
+/* For smaller screens, like 320x590 */
+@media (max-width: 374px) {
+  .popup-content h1 {
+    font-size: 2.5rem; /* Sesuaikan agar lebih kecil di layar 360px */
+  }
+
+  .popup-content-sub {
+    padding-top: 1rem; /* Mengurangi padding atas agar tombol terlihat */
+    
+  }
+
+  .popup-content .close {
+    font-size: 1rem; /* Perkecil ukuran tombol di layar sangat kecil */
+    padding: 0.4rem 1rem; /* Sesuaikan padding agar proporsional */
+  }
+}
