@@ -112,20 +112,6 @@ var x = setInterval(function () {
   }
 }, 1000);
 
-// Show Cards
-// const showCardButton = document.getElementById("show-cards");
-// const cardContainer = document.getElementById("card-container");
-// const cards = document.querySelectorAll(".card");
-
-// showCardButton.addEventListener("click", function () {
-//   cardContainer.classList.toggle("show");
-//   if (cardContainer.classList.contains("show")) {
-//     showCardsSequentially();
-//   } else {
-//     resetCardStyles();
-//   }
-// });
-
 function showCardsSequentially() {
   cards.forEach((card, index) => {
     card.style.animation = `cardFadeIn 0.2s ease ${index * 0.2 + 0.2}s forwards`;

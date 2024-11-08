@@ -166,16 +166,6 @@ body.popup-open {
   overflow: hidden; /* Hapus scroll dari body ketika popup terbuka */
 }
 
-/* Sembunyikan konten utama saat popup aktif */
-/* #home {
-  display: none;
-} */
-
-/* Setelah popup ditutup, tampilkan konten utama */
-/* .popup-closed #home {
-  display: block;
-} */
-
 /* Gaya untuk tombol tutup */
 .close {
   display: inline-block;
@@ -491,92 +481,6 @@ body.popup-open {
   font-weight: normal;
 }
 
-/* about2 */
-.about2 {
-  padding: 7rem 7% 20.4rem;
-  background-image: linear-gradient(to top, rgba(93, 100, 111, 0.3), rgba(255, 255, 255, 0.5));
-}
-
-.about2 .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; /* Stack content on top of image */
-}
-
-.about2 .row .about2-img {
-  position: relative;
-  flex: 1 1 45rem;
-  display: flex;
-  justify-content: center;
-  margin: 0 1rem;
-}
-
-.about2 .row .about2-img img {
-  width: 80%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  aspect-ratio: 2/3;
-  box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8);
-  border-radius: 5%; /* Membuat gambar bundar */
-}
-
-.about2 .row .about2-img .overlay-img {
-  position: absolute;
-  top: 20rem;
-  left: 20rem;
-  width: 60%;
-  box-shadow: 0.5rem 0.5rem 1.5rem rgba(58, 79, 71, 0.8);
-}
-
-.about2 .row .content {
-  flex: 1 1 35rem;
-  padding: 20rem 2rem 0rem;
-  color: var(--dark-75);
-  text-align: center;
-}
-
-.about2 .row .content h4 {
-  color: #9b9b9b;
-  font-family: "Karla", Sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 2.8px;
-  line-height: 1.2em;
-}
-
-.about2 .row .content h3 {
-  color: #121212;
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  font-family: "Prata", Sans-serif;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1.2em;
-}
-
-.about2 .row .content p {
-  font-size: 1rem;
-  margin: 0;
-  font-family: var(--poppins);
-  font-weight: normal;
-  color: #9b9b9b;
-}
-
-.about2 .row .content span {
-  font-size: 1.5rem;
-  display: block;
-  margin-bottom: 1.5rem;
-  font-family: var(--poppins);
-  font-weight: normal;
-}
-
-.cba {
-  padding: 0.5rem 1.8rem;
-  margin-top: 1rem;
-}
 /* story */
 .story {
   padding: 5rem 7%;
@@ -838,136 +742,7 @@ body.popup-open {
     filter: brightness(35%);
   }
 
-/* Gift */
-.gift {
-  padding: 7rem 7%;
-  background-image: linear-gradient(to top, rgba(93, 100, 111, 0.3), rgba(255, 255, 255, 0.3));
-}
 
-.gift h2 {
-  font-size: 5rem;
-  font-family: power;
-  text-align: center;
-  color: var(--dark-75);
-  font-weight: normal;
-  font-style: italic;
-  margin-bottom: 3rem;
-}
-.gift p {
-  text-align: center;
-  max-width: 40rem;
-  margin: auto;
-  font-size: 1.4rem;
-  color: var(--dark-75);
-  margin-bottom: 4rem;
-  /* line-height: 1.5rem; */
-}
-.gift .buttom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gift .card-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 3rem;
-  max-height: 0;
-  overflow: hidden;
-  animation: containerSlideDown 0.5s ease forwards;
-  opacity: 0;
-  transition: max-height 0.5s ease;
-}
-@keyframes containerSlideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.card-container.show {
-  max-height: 500px;
-  opacity: 1;
-}
-
-.gift .card {
-  background-color: #fff;
-  color: var(--dark-75);
-  border-radius: 4px;
-  width: 100%;
-  padding: 3rem;
-  margin: 1.5rem;
-  text-align: center;
-  background: linear-gradient(to bottom left, rgba(205, 204, 204, 0.445) 30%, #fff 70%);
-  transform-origin: top;
-  opacity: 0;
-  transform: translateY(-20px);
-}
-.card-container.show .card {
-  animation: cardFadeIn 0.2s ease 0.2s forwards;
-}
-
-@keyframes cardFadeIn {
-  0% {
-    opacity: 0;
-    /* transform: translateY(-20px); */
-  }
-  100% {
-    opacity: 1;
-    /* transform: translateY(0); */
-  }
-}
-
-.gift .card h3 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.gift .card h5 {
-  font-size: 1.4rem;
-}
-.gift .card p {
-  text-align: center;
-  max-width: 40rem;
-  font-size: 1.3rem;
-  color: var(--dark-75);
-  margin: 2rem 3rem;
-}
-#yani {
-  margin: 1rem 2rem;
-}
-.rekening {
-  display: inline-block;
-  padding: 0.5rem 1.8rem;
-  color: #fff;
-  font-size: 1.4rem;
-  text-align: center;
-  background-color: var(--dark-100);
-  box-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.rekening i {
-  margin-right: 0.7rem;
-}
-.salin {
-  display: inline-block;
-  padding: 0.5rem 1.3rem;
-  color: #fff;
-  font-size: 1.2rem;
-  text-align: center;
-  background-color: var(--dark-100);
-  box-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8);
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-.salin i {
-  margin-right: 0.7rem;
-}
 /* RSVP */
 /* RSVP Section */
 .rsvp {
@@ -1173,19 +948,6 @@ body.popup-open {
   font-family: Georgia, sans-serif;
   letter-spacing: 0.3rem;
   padding: 3rem;
-}
-.doa .content h3 {
-  font-size: 3em;
-  margin-top: 2rem;
-  font-weight: 600;
-  color: var(--bg);
-  /* text-shadow: 1px 1px 3px rgba(58, 79, 71, 0.8); */
-  text-transform: uppercase;
-  font-family: "Prata", sans-serif;
-  letter-spacing: 0.3rem;
-}
-.doa .content h3 span {
-  color: #AE9250;
 }
 
 /* footer */
@@ -1461,84 +1223,7 @@ footer .credit {
     }
   }
   
-  /* about2 */
-  .about2 {
-    padding: 2rem 2% 1rem;
-  }
-  
-  .about2 .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Stack content on top of image */
-  }
-  
-  .about2 .row .about2-img {
-    position: relative;
-    flex: 1 1 45rem;
-    display: flex;
-    justify-content: center;
-    margin: 0 1rem;
-  }
-  
-  .about2 .row .about2-img img {
-    width: 50%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    /* aspect-ratio: 2/3; */
-    /* box-shadow: 1rem 1rem 3rem rgba(58, 79, 71, 0.8); */
-    /* border-radius: 5%; Membuat gambar bundar */
-  }
-  
-  
-  .about2 .row .content {
-    flex: 1 1 35rem;
-    padding: 20rem 2rem 0rem;
-    color: var(--dark-75);
-    text-align: center;
-  }
-  
-  .about2 .row .content h4 {
-    color: #9b9b9b;
-    font-family: "Karla", Sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 2.8px;
-    line-height: 1.2em;
-  }
-  
-  .about2 .row .content h3 {
-    color: #121212;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-family: "Prata", Sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
-    line-height: 1.2em;
-  }
-  
-  
-  .about2 .row .content p {
-    font-size: 1rem;
-    margin: 0;
-    font-family: var(--poppins);
-    font-weight: normal;
-    color: #9b9b9b;
-  }
-  
-  .about2 .row .content span {
-    font-size: 1.5rem;
-    display: block;
-    margin-bottom: 1.5rem;
-    font-family: var(--poppins);
-    font-weight: normal;
-  }
-  .cba {
-    padding: 0.5rem 1.8rem;
-    margin-top: 1rem;
-  }
+
   /* event */
   .event .card {
     flex-wrap: wrap;
