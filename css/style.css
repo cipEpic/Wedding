@@ -1044,6 +1044,17 @@ footer .credit {
   /* padding-top: 28rem; */
 }
 
+.popup-content h1 {
+  font-size: 3.5rem;
+  /* font-weight: 700; */
+  font-weight: normal;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  /* text-transform: uppercase; */
+  font-family: "prata", Sans-Serif;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
 
 /* Hero Section */
 .hero {
