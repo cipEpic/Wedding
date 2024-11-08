@@ -386,49 +386,47 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 
 
-  <!-- Start RSVP -->
-  <section class="rsvp">
-    <h1 class="rsvp-title1">Buku Tamu</h1>
-    <div class="row">
-      <div class="message" data-aos="fade-down">
-        <!-- Title Section -->
-        <h2 class="rsvp-title">UCAPAN DAN DOA</h2>
+<!-- Start RSVP -->
+<section class="rsvp">
+  <h1 class="rsvp-title1">Buku Tamu</h1>
+  <div class="row">
+    <div class="message" data-aos="fade-down">
+      <!-- Title Section -->
+      <h2 class="rsvp-title">UCAPAN DAN DOA</h2>
 
-        <!-- Comment Form -->
-        <form id="formMessage">
-          <div class="input-group">
-            <label for="nama">Nama:</label>
-            <input type="text" name="nama" placeholder="Nama" required>
-          </div>
-          <div class="input-group">
-            <label for="kehadiran">Kehadiran:</label>
-            <select name="kehadiran" id="kehadiran" required>
-              <option value="">Pilih Kehadiran</option>
-              <option value="Hadir">Hadir</option>
-              <option value="Akan Hadir">Akan Hadir</option>
-              <option value="Tidak Hadir">Tidak Hadir</option>
-            </select>
-          </div>
-          <div class="input-group">
-            <label for="pesan">Pesan:</label>
-            <textarea cols="30" rows="5" name="pesan" placeholder="Berikan Ucapan & Doa Terbaik Untuk kedua Mempelai"
-              required></textarea>
-          </div>
-          <button type="submit" class="btn">Kirim ucapan <i data-feather="arrow-right"
-              style="vertical-align: middle"></i></button>
-        </form>
-
-        <!-- Comments Section -->
-        <div class="container-card" data-aos="fade-up">
-          <div class="card-message">
-            <div id="messages-container" class="bubble-container"></div>
-          </div>
+      <!-- Comment Form -->
+      <form id="formMessage">
+        <div class="input-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" placeholder="Nama" required>
         </div>
+        <div class="input-group">
+          <label for="kehadiran">Kehadiran:</label>
+          <select name="kehadiran" id="kehadiran" required>
+            <option value="">Pilih Kehadiran</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Akan Hadir">Akan Hadir</option>
+            <option value="Tidak Hadir">Tidak Hadir</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" cols="30" rows="5" name="pesan" placeholder="Berikan Ucapan & Doa Terbaik Untuk kedua Mempelai" required></textarea>
+        </div>
+        <button type="submit" class="btn">Kirim ucapan <i data-feather="arrow-right" style="vertical-align: middle"></i></button>
+      </form>
 
+      <!-- Comments Section -->
+      <div class="container-card" data-aos="fade-up">
+        <div class="card-message">
+          <div id="messages-container" class="bubble-container"></div>
+        </div>
       </div>
+      
     </div>
-  </section>
-  <!-- End RSVP -->
+  </div>
+</section>
+<!-- End RSVP -->
 
   <!-- Start Doa -->
   <section class="doa" id="home">
