@@ -57,36 +57,32 @@
 
 <body>
 
-  <!-- popup start -->
-  <div id="myPopup" class="popup" style="display: block;">
-    <div class="popup-overlay"></div>
-    <div class="popup-container">
-      <div class="popup-content">
-        <h2 class="example4" data-aos="fade-down" data-aos-delay="200">The Wedding of</h2>
-        <h1 data-aos="zoom-in" data-aos-delay="0" data-aos-duration="500">
-          Ajip <span> &</span> Puspita.
-        </h1>
-        <h2 class="example5" data-aos="fade-down" data-aos-delay="200">Kamis, 28 November 2024</h2>
+<!-- popup start -->
+<div id="myPopup" class="popup" style="display: block;">
+  <div class="popup-overlay"></div>
+  <div class="popup-container">
+    <div class="popup-content">
+      <h2 class="example4">The Wedding of</h2>
+      <h1>Ajip <span>&</span> Puspita.</h1>
+      <h2 class="example5">Kamis, 28 November 2024</h2>
 
-        <div class="popup-content-sub">
-          <h2 class="example2" data-aos="fade-down" data-aos-delay="200">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
-          <h2 class="example3" id="guestName" data-aos="fade-down" data-aos-delay="200"></h2>
-          <!-- Add this line where you want to display the guest's name -->
-
-          <button data-aos="fade-up" data-aos-delay="200" class="close"> Buka Undangan</button>
-        </div>
-        <audio id="popupAudio" src="audio/CintaTerakhir.mp3" loop></audio>
-        <!-- Ganti dengan path file audio yang sesuai -->
+      <div class="popup-content-sub">
+        <h2 class="example2">Kepada Yth,<br> Bapak/Ibu/Saudara/i :</h2>
+        <h2 class="example3" id="guestName"></h2>
+        
+        <button class="close"> Buka Undangan</button>
       </div>
+      <audio id="popupAudio" src="audio/CintaTerakhir.mp3" loop></audio>
     </div>
   </div>
+</div>
+<!-- popup end -->
 
-  <!-- popup end -->
+<!-- Mute/Unmute Button -->
+<div id="audioControl" class="audio-control">
+  <i id="audioIcon" class="fa fa-stop-circle"></i>
+</div>
 
-  <!-- Mute/Unmute Button -->
-  <div id="audioControl" class="audio-control">
-    <i id="audioIcon" class="fa fa-stop-circle"></i>
-  </div>
 
   <!-- hero section start -->
   <section class="hero" id="home">
