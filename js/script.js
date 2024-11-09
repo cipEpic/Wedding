@@ -14,10 +14,10 @@ function showPopup() {
   document.body.style.overflow = "hidden";
   var popupAudio = document.getElementById("popupAudio");
   popupAudio.loop = true; // Mengaktifkan looping
-  setTimeout(function () {
-    popup.style.transform = "translateY(0)";
-    popup.style.opacity = 1;
-  }); // Tambahkan penundaan agar animasi berfungsi dengan baik
+  // setTimeout(function () {
+  //   popup.style.transform = "translateY(0)";
+  //   popup.style.opacity = 1;
+  // }); // Tambahkan penundaan agar animasi berfungsi dengan baik
 }
 
 // Fungsi untuk menyembunyikan popup
