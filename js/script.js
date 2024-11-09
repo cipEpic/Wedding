@@ -49,9 +49,9 @@ function toggleAudio() {
 
 // Tambahkan event listener pada tombol tutup dan tombol audio control
 closeBtn.addEventListener("click", hidePopup);
-audioControl.addEventListener("click", toggleAudio);
-// Tampilkan popup setelah halaman dimuat
-window.onload = showPopup;
+// audioControl.addEventListener("click", toggleAudio);
+// // Tampilkan popup setelah halaman dimuat
+// window.onload = showPopup;
 
 document.addEventListener("DOMContentLoaded", function () {
   // Ambil elemen slide dan atur slide pertama sebagai aktif
